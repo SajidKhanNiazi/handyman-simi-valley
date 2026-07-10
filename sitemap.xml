@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://www.example.com/</loc></url>
-  <url><loc>https://www.example.com/handyman-services-simi-valley-ca/</loc></url>
+  <url><loc>https://www.example.com/services/</loc></url>
   <url><loc>https://www.example.com/services/general-repairs-punch-list/</loc></url>
   <url><loc>https://www.example.com/services/drywall-repair/</loc></url>
   <url><loc>https://www.example.com/services/painting-interior-exterior/</loc></url>
@@ -21,7 +21,7 @@
   <url><loc>https://www.example.com/locations/simi-valley/east-simi-valley/</loc></url>
   <url><loc>https://www.example.com/locations/simi-valley/big-sky/</loc></url>
   <url><loc>https://www.example.com/locations/simi-valley/santa-susana/</loc></url>
-  <url><loc>https://www.example.com/pricing/handyman-cost-simi-valley/</loc></url>
+  <url><loc>https://www.example.com/pricing/</loc></url>
   <url><loc>https://www.example.com/pricing/is-cheap-handyman-worth-it/</loc></url>
   <url><loc>https://www.example.com/pricing/plumber-vs-handyman-cost-california/</loc></url>
   <url><loc>https://www.example.com/blog/</loc></url>

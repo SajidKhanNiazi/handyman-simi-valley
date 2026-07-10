@@ -1,18 +1,536 @@
-﻿<!doctype html>
-<html lang='en'>
+<!doctype html>
+<html lang="en">
 <head>
-  <meta charset='UTF-8'>
-  <meta name='viewport' content='width=device-width, initial-scale=1.0'>  <title>Garage Door Repair</title>
-  <meta name='description' content='Content for this Simi Valley handyman page is coming soon.'>
-  <link rel='canonical' href='https://www.example.com/services/garage-door-repair/'>
-  <script src='https://cdn.tailwindcss.com'></script>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Garage Door Repair in Simi Valley, CA | Simi Valley Handyman Co.</title>
+  <meta name="description" content="Garage door spring, opener, and track repair in Simi Valley, CA. Fast, safe garage door fixes. Free estimate.">
+  <link rel="canonical" href="https://www.example.com/services/garage-door-repair/">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="/assets/css/site.css">
   <link rel="icon" type="image/webp" href="/assets/image/handyman simi valley logo.webp">
 </head>
-<body class='bg-slate-50 text-slate-900'>
-  <main class='mx-auto max-w-4xl px-4 py-20'>    <h1 class='text-3xl font-bold'>Garage Door Repair</h1>
-    <p class='mt-4 text-slate-700'>Content coming soon.</p>
-    <p class='mt-6'><a class='text-blue-700 underline' href='/'>Return to homepage</a></p>
+<body class="bg-white text-slate-900">
+  <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:left-2 focus:top-2 focus:z-50 focus:rounded focus:bg-white focus:px-3 focus:py-2 focus:text-sm focus:shadow">Skip to main content</a>
+
+  <header class="z-40 shadow-xl bg-ink relative">
+    <div class="bg-slate-900 border-b border-white/10 text-slate-300">
+      <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-2 text-sm">
+        <div class="flex items-center gap-4">
+          <a href="tel:8055550142" class="font-medium hover:text-brand flex items-center gap-1"><i data-lucide="phone" class="h-4 w-4"></i> Call or Text: (805) 555-0142</a>
+          <span class="hidden text-slate-600 sm:inline">|</span>
+          <nav aria-label="Utility links" class="hidden sm:block">
+            <ul class="flex items-center gap-4">
+              <li><a href="/about/" class="hover:text-brand transition-colors">About</a></li>
+              <li><a href="/contact/" class="hover:text-brand transition-colors">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="flex items-center gap-4">
+          <a href="#estimate-form" class="btn-primary hidden px-4 py-1.5 text-sm sm:inline-flex items-center gap-2">Get a Free Estimate</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-ink">
+      <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-3">
+        <a href="/" class="inline-flex items-center gap-3">
+          <img
+            src="/assets/image/handyman simi valley logo.webp"
+            alt="Handyman Simi Valley logo"
+            title="Handyman Simi Valley"
+            class="h-16 md:h-20 w-[220px] md:w-[320px] object-contain scale-110 md:scale-125 origin-left"
+            loading="eager"
+            decoding="async"
+          >
+        </a>
+
+        <button id="menu-toggle" type="button" class="inline-flex rounded border border-white/20 text-white px-3 py-2 md:hidden hover:bg-white/10" aria-expanded="false" aria-controls="mobile-menu">
+          <span class="sr-only">Open menu</span>
+          <i data-lucide="menu" class="h-6 w-6"></i>
+        </button>
+
+        <nav class="hidden items-center gap-6 md:flex" aria-label="Main navigation">
+          <a href="/" class="font-medium text-brand">Home</a>
+
+          <div class="group relative">
+            <button type="button" class="inline-flex items-center gap-1 font-medium text-white hover:text-brand transition-colors">Services <span aria-hidden="true" class="text-xs">▾</span></button>
+            <ul class="nav-dropdown absolute left-0 top-full z-50 mt-2 w-80 rounded-xl border border-slate-200 bg-white p-2 shadow-lg text-slate-900">
+              <li><a class="block rounded px-3 py-2 hover:bg-slate-50" href="/handyman-services-simi-valley-ca/">All Handyman Services</a></li>
+              <li><a class="block rounded px-3 py-2 hover:bg-slate-50" href="/services/general-repairs-punch-list/">General Repairs &amp; Punch List</a></li>
+              <li><a class="block rounded px-3 py-2 hover:bg-slate-50" href="/services/drywall-repair/">Drywall Repair</a></li>
+              <li><a class="block rounded px-3 py-2 hover:bg-slate-50" href="/services/painting-interior-exterior/">Painting Interior &amp; Exterior</a></li>
+              <li><a class="block rounded px-3 py-2 hover:bg-slate-50" href="/services/plumbing-fixture-repair/">Plumbing Fixture Repair</a></li>
+              <li><a class="block rounded px-3 py-2 hover:bg-slate-50" href="/services/electrical-fixture-install/">Electrical Fixture Install</a></li>
+              <li><a class="block rounded px-3 py-2 hover:bg-slate-50" href="/services/smart-home-device-install/">Smart Home Device Install</a></li>
+              <li><a class="block rounded px-3 py-2 hover:bg-slate-50" href="/services/tv-mounting-furniture-assembly/">TV Mounting &amp; Furniture Assembly</a></li>
+              <li><a class="block rounded px-3 py-2 hover:bg-slate-50" href="/services/fencing-gates-pet-doors/">Fencing, Gates &amp; Pet Doors</a></li>
+              <li><a class="block rounded px-3 py-2 hover:bg-slate-50" href="/services/garage-door-repair/">Garage Door Repair</a></li>
+              <li><a class="block rounded px-3 py-2 hover:bg-slate-50" href="/services/deck-patio-repair/">Deck &amp; Patio Repair</a></li>
+              <li><a class="block rounded px-3 py-2 hover:bg-slate-50" href="/services/gutter-cleaning-repair/">Gutter Cleaning &amp; Repair</a></li>
+              <li><a class="block rounded px-3 py-2 hover:bg-slate-50" href="/services/sprinkler-irrigation-repair/">Sprinkler &amp; Irrigation Repair</a></li>
+              <li><a class="block rounded px-3 py-2 hover:bg-slate-50" href="/services/aging-in-place-modifications/">Aging in Place Modifications</a></li>
+            </ul>
+          </div>
+
+          <div class="group relative">
+            <button type="button" class="inline-flex items-center gap-1 font-medium text-white hover:text-brand transition-colors">Locations <span aria-hidden="true" class="text-xs">▾</span></button>
+            <ul class="nav-dropdown absolute left-0 top-full z-50 mt-2 w-72 rounded-xl border border-slate-200 bg-white p-2 shadow-lg text-slate-900">
+              <li><a class="block rounded px-3 py-2 hover:bg-slate-50" href="/locations/simi-valley/">Simi Valley</a></li>
+              <li><a class="block rounded px-3 py-2 hover:bg-slate-50" href="/locations/simi-valley/wood-ranch/">Wood Ranch</a></li>
+              <li><a class="block rounded px-3 py-2 hover:bg-slate-50" href="/locations/simi-valley/central-simi-valley/">Central Simi Valley</a></li>
+              <li><a class="block rounded px-3 py-2 hover:bg-slate-50" href="/locations/simi-valley/east-simi-valley/">East Simi Valley</a></li>
+              <li><a class="block rounded px-3 py-2 hover:bg-slate-50" href="/locations/simi-valley/big-sky/">Big Sky</a></li>
+              <li><a class="block rounded px-3 py-2 hover:bg-slate-50" href="/locations/simi-valley/santa-susana/">Santa Susana</a></li>
+            </ul>
+          </div>
+
+          <a href="/pricing/handyman-cost-simi-valley/" class="font-medium text-white hover:text-brand transition-colors">Pricing</a>
+          <a href="/blog/" class="font-medium text-white hover:text-brand transition-colors">Blog</a>
+          <a href="/faq/" class="font-medium text-white hover:text-brand transition-colors">FAQ</a>
+        </nav>
+      </div>
+
+      <nav id="mobile-menu" class="hidden border-t border-white/10 bg-ink px-4 py-3 md:hidden text-white" aria-label="Mobile navigation">
+        <ul class="space-y-3">
+          <li><a href="/" class="block font-medium text-brand">Home</a></li>
+          <li><a href="/handyman-services-simi-valley-ca/" class="block hover:text-brand">All Services</a></li>
+          <li><a href="/locations/simi-valley/" class="block hover:text-brand">Locations</a></li>
+          <li><a href="/pricing/handyman-cost-simi-valley/" class="block hover:text-brand">Pricing</a></li>
+          <li><a href="/blog/" class="block hover:text-brand">Blog</a></li>
+          <li><a href="/faq/" class="block hover:text-brand">FAQ</a></li>
+          <li><a href="/about/" class="block hover:text-brand">About</a></li>
+          <li><a href="/contact/" class="block hover:text-brand">Contact</a></li>
+          <li><a href="#estimate-form" class="block text-brand font-bold">Get a Free Estimate</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- Hero Banner Section -->
+    <section class="hero-leander">
+      <img
+        src="/assets/image/general-repairs-hero.png"
+        alt="Garage Door Repair in Simi Valley, CA"
+        title="Garage Door Repair"
+        class="hero-leander__bg"
+        loading="eager"
+        decoding="async"
+      >
+      <div class="hero-leander__overlay" aria-hidden="true"></div>
+      <div class="hero-leander__content">
+        
+    <nav class="mb-4 text-xs font-semibold uppercase tracking-wider text-slate-300 flex items-center justify-center gap-2" aria-label="Breadcrumb">
+      <a href="/" class="hover:text-brand transition-colors text-slate-200">Home</a>
+      <i data-lucide="chevron-right" class="h-3 w-3 text-slate-400"></i>
+      <a href="/handyman-services-simi-valley-ca/" class="hover:text-brand transition-colors text-slate-200">Services</a>
+      <i data-lucide="chevron-right" class="h-3 w-3 text-slate-400"></i>
+      <span class="text-white font-bold">Garage Door Repair</span>
+    </nav>
+  
+        <h1 class="text-3xl font-extrabold leading-tight md:text-5xl lg:text-[3.25rem] text-white">Garage Door Repair in Simi Valley, CA</h1>
+        <p class="mx-auto mt-5 max-w-2xl text-lg text-slate-200">Simi Valley Handyman Co. repairs common garage door issues — opener problems, track misalignment, and minor hardware fixes — and tells you honestly when a job needs a garage door specialist instead.</p>
+        <div class="mt-8 flex flex-wrap items-center justify-center gap-4">
+          <a href="tel:8055550142" class="btn-primary text-base">📞 Call or Text: (805) 555-0142</a>
+          <a href="#estimate-form" class="btn-ghost text-base">Get a Free Estimate →</a>
+        </div>
+        <p class="hero-trust-line">✓ Safety Focused · ✓ Same-Day Response · ✓ Upfront Pricing</p>
+      </div>
+    </section>
+
+    <!-- Signs/Symptoms Grid -->
+    <section class="mx-auto max-w-5xl px-4 py-16 bg-white">
+      <div class="text-center max-w-2xl mx-auto mb-10">
+        <h2 class="text-2xl font-bold text-ink md:text-3xl">Signs Your Garage Door Needs Repair</h2>
+        <p class="mt-2 text-sm text-slate-600">Recognizing operational issues early prevents complete opener failure or safety sensor lockouts.</p>
+      </div>
+      <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        
+    <div class="card-leander flex flex-col justify-between">
+      <div>
+        <div class="mb-3 inline-flex h-9 w-9 items-center justify-center rounded-lg bg-orange-50 text-brand"><i data-lucide="help-circle" class="h-5 w-5"></i></div>
+        <h3 class="font-bold text-slate-900 text-base">Opener Runs, No Movement</h3>
+        <p class="mt-2 text-xs text-slate-600 leading-relaxed">The opener runs but the door doesn't move, or moves unevenly.</p>
+      </div>
+    </div>
+  
+    <div class="card-leander flex flex-col justify-between">
+      <div>
+        <div class="mb-3 inline-flex h-9 w-9 items-center justify-center rounded-lg bg-orange-50 text-brand"><i data-lucide="alert-circle" class="h-5 w-5"></i></div>
+        <h3 class="font-bold text-slate-900 text-base">Noisy & Jerky Operation</h3>
+        <p class="mt-2 text-xs text-slate-600 leading-relaxed">The door is noisy, jerky, or slow to open/close.</p>
+      </div>
+    </div>
+  
+    <div class="card-leander flex flex-col justify-between">
+      <div>
+        <div class="mb-3 inline-flex h-9 w-9 items-center justify-center rounded-lg bg-orange-50 text-brand"><i data-lucide="alert-triangle" class="h-5 w-5"></i></div>
+        <h3 class="font-bold text-slate-900 text-base">Track Misalignment</h3>
+        <p class="mt-2 text-xs text-slate-600 leading-relaxed">Visible track misalignment or a door that's come off-track slightly.</p>
+      </div>
+    </div>
+  
+    <div class="card-leander flex flex-col justify-between">
+      <div>
+        <div class="mb-3 inline-flex h-9 w-9 items-center justify-center rounded-lg bg-orange-50 text-brand"><i data-lucide="wind" class="h-5 w-5"></i></div>
+        <h3 class="font-bold text-slate-900 text-base">Worn Weatherstripping</h3>
+        <p class="mt-2 text-xs text-slate-600 leading-relaxed">Worn or damaged weatherstripping along the bottom of the door letting in wind and dust.</p>
+      </div>
+    </div>
+  
+    <div class="card-leander flex flex-col justify-between">
+      <div>
+        <div class="mb-3 inline-flex h-9 w-9 items-center justify-center rounded-lg bg-orange-50 text-brand"><i data-lucide="lock" class="h-5 w-5"></i></div>
+        <h3 class="font-bold text-slate-900 text-base">Remote Unresponsive</h3>
+        <p class="mt-2 text-xs text-slate-600 leading-relaxed">A remote or keypad that's stopped responding reliably.</p>
+      </div>
+    </div>
+  
+      </div>
+    </section>
+
+    <!-- Common Issues We Repair Grid -->
+    <section class="bg-slate-50 border-t border-b border-slate-200/60 py-16">
+      <div class="mx-auto max-w-5xl px-4">
+        <div class="text-center max-w-2xl mx-auto mb-10">
+          <h2 class="text-2xl font-bold text-ink md:text-3xl">What We Handle</h2>
+          <p class="mt-2 text-sm text-slate-600">We handle standard mechanical and electronic adjustments to get your door opening smoothly.</p>
+        </div>
+        <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+          
+    <div class="card-leander bg-white">
+      <h3 class="text-base font-bold text-ink">Opener Troubleshooting</h3>
+      <p class="mt-2 text-xs text-slate-600 leading-relaxed">Fixing travel limit adjustments, wiring, gear wear, and sensor issues.</p>
+    </div>
+  
+    <div class="card-leander bg-white">
+      <h3 class="text-base font-bold text-ink">Track & Roller Adjustments</h3>
+      <p class="mt-2 text-xs text-slate-600 leading-relaxed">Aligning rails, lubricating parts, and securing loose brackets.</p>
+    </div>
+  
+    <div class="card-leander bg-white">
+      <h3 class="text-base font-bold text-ink">Weatherstripping</h3>
+      <p class="mt-2 text-xs text-slate-600 leading-relaxed">Replacing dry-rotted rubber seals on the sides and bottom of the garage door.</p>
+    </div>
+  
+    <div class="card-leander bg-white">
+      <h3 class="text-base font-bold text-ink">Keypads & Remotes</h3>
+      <p class="mt-2 text-xs text-slate-600 leading-relaxed">Programming new remotes, keypad replacements, and sync issues.</p>
+    </div>
+  
+        </div>
+      </div>
+    </section>
+
+    <!-- How the Process Works (Numbered Steps) -->
+    <section class="mx-auto max-w-5xl px-4 py-16 bg-white">
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <h2 class="text-2xl font-bold text-ink md:text-3xl">How a Garage Door Repair Works</h2>
+        <p class="mt-2 text-sm text-slate-600">Safety is critical. We inspect structural tension before carrying out any track adjustments.</p>
+      </div>
+      <div class="grid gap-8 md:grid-cols-4 relative">
+        <div class="hidden md:block absolute top-7 left-10 right-10 h-0.5 bg-slate-200 -z-10"></div>
+        
+    <div class="group flex flex-col items-center text-center p-4 rounded-xl hover:bg-slate-50 hover:shadow-md transition-all duration-300 border border-transparent hover:border-slate-100 cursor-default">
+      <div class="h-14 w-14 rounded-full bg-brand text-ink font-extrabold flex items-center justify-center text-lg shadow-md border-4 border-white mb-4 group-hover:bg-ink group-hover:text-brand transition-colors duration-300">1</div>
+      <h3 class="font-bold text-ink text-sm group-hover:text-brand transition-colors duration-300">Safety Inspection</h3>
+      <p class="mt-2 text-xs text-slate-600 leading-relaxed">We inspect cables, rollers, and verify spring tension.</p>
+    </div>
+  
+    <div class="group flex flex-col items-center text-center p-4 rounded-xl hover:bg-slate-50 hover:shadow-md transition-all duration-300 border border-transparent hover:border-slate-100 cursor-default">
+      <div class="h-14 w-14 rounded-full bg-brand text-ink font-extrabold flex items-center justify-center text-lg shadow-md border-4 border-white mb-4 group-hover:bg-ink group-hover:text-brand transition-colors duration-300">2</div>
+      <h3 class="font-bold text-ink text-sm group-hover:text-brand transition-colors duration-300">Track Alignment</h3>
+      <p class="mt-2 text-xs text-slate-600 leading-relaxed">We adjust and level tracks, replacing bent brackets.</p>
+    </div>
+  
+    <div class="group flex flex-col items-center text-center p-4 rounded-xl hover:bg-slate-50 hover:shadow-md transition-all duration-300 border border-transparent hover:border-slate-100 cursor-default">
+      <div class="h-14 w-14 rounded-full bg-brand text-ink font-extrabold flex items-center justify-center text-lg shadow-md border-4 border-white mb-4 group-hover:bg-ink group-hover:text-brand transition-colors duration-300">3</div>
+      <h3 class="font-bold text-ink text-sm group-hover:text-brand transition-colors duration-300">Opener Tune-up</h3>
+      <p class="mt-2 text-xs text-slate-600 leading-relaxed">We adjust motor limits and clean safety photo-eye sensors.</p>
+    </div>
+  
+    <div class="group flex flex-col items-center text-center p-4 rounded-xl hover:bg-slate-50 hover:shadow-md transition-all duration-300 border border-transparent hover:border-slate-100 cursor-default">
+      <div class="h-14 w-14 rounded-full bg-brand text-ink font-extrabold flex items-center justify-center text-lg shadow-md border-4 border-white mb-4 group-hover:bg-ink group-hover:text-brand transition-colors duration-300">4</div>
+      <h3 class="font-bold text-ink text-sm group-hover:text-brand transition-colors duration-300">Balance Test</h3>
+      <p class="mt-2 text-xs text-slate-600 leading-relaxed">We disconnect the door and test balance manually to ensure it isn't dragging.</p>
+    </div>
+  
+      </div>
+    </section>
+
+    <!-- Context & Advisory Area -->
+    <section class="bg-slate-50 border-t border-b border-slate-200/60 py-16">
+      <div class="mx-auto max-w-5xl px-4 grid gap-8 md:grid-cols-2">
+        <div class="flex flex-col justify-center">
+          <h2 class="text-2xl font-bold text-ink md:text-3xl">Why Garage Seals Matter in Simi Valley</h2>
+          <p class="mt-4 text-slate-700 leading-relaxed">High winds during Santa Ana wind events blow heavy dust, ash, and embers. A rotted or missing bottom weatherstrip allows wind-blown debris straight into your garage. Replacing bottom seals is an easy way to keep your garage cleaner and safer during fire season.</p>
+          <div class="mt-6 p-5 rounded-xl border-l-4 border-brand bg-white shadow-sm flex gap-4">
+            <div class="shrink-0 text-brand"><i data-lucide="map-pin" class="h-6 w-6"></i></div>
+            <div>
+              <h4 class="font-bold text-ink text-sm">Santa Ana Winds</h4>
+              <p class="mt-2 text-xs text-slate-600 leading-relaxed">Embers blowing under drafty garage doors can ignite stored cardboard or items. Tight rubber seals are considered a core home-hardening recommendation.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col gap-6 justify-center">
+          <div class="card-leander bg-white">
+            <div class="mb-4 inline-flex h-11 w-11 items-center justify-center rounded-full bg-orange-100 text-brand"><i data-lucide="help-circle" class="h-5 w-5"></i></div>
+            <h3 class="text-lg font-bold text-ink">Why won't my garage door close all the way?</h3>
+            <p class="mt-2 text-xs text-slate-700 leading-relaxed">Usually a sensor alignment issue (the small sensors near the bottom of the track need a clear, aligned line of sight) or a track obstruction — both quick checks.</p>
+          </div>
+
+          <!-- Neutral safety / scope trust box -->
+          <div class="rounded-xl border border-slate-200 bg-white p-6 flex gap-4 shadow-sm">
+            <div class="shrink-0 text-slate-500"><i data-lucide="alert-circle" class="h-6 w-6"></i></div>
+            <div>
+              <h4 class="font-bold text-ink text-sm">A Safety Note on Garage Door Springs</h4>
+              <p class="mt-2 text-xs text-slate-600 leading-relaxed">Garage door springs — especially torsion springs — are under very high tension and can cause serious injury if handled incorrectly. We assess spring issues case by case: some hardware-level fixes are within handyman scope, but full torsion spring replacement is a job we'll often refer to a dedicated garage door specialist rather than take unnecessary risk. We'd rather be straightforward about this than push a repair that isn't safe for the scope we work in.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing Area -->
+    <section class="bg-white py-16">
+      <div class="mx-auto max-w-4xl px-4 text-center">
+        <h2 class="text-2xl font-bold text-ink md:text-3xl">Garage Door Repair Pricing</h2>
+        <p class="mt-4 text-slate-700 max-w-2xl mx-auto leading-relaxed">See our <a href="/pricing/handyman-cost-simi-valley/" class="font-semibold text-brand underline">pricing guide</a> for typical costs on opener and track repairs.</p>
+      </div>
+    </section>
+
+    <!-- Related Services -->
+    <section class="mx-auto max-w-5xl px-4 py-16 bg-slate-50 border-t border-b border-slate-200/60">
+      <div class="text-center max-w-2xl mx-auto mb-10">
+        <h2 class="text-2xl font-bold text-ink md:text-3xl">Related Services</h2>
+        <p class="mt-2 text-sm text-slate-600">Other mechanical and home repairs that homeowners often combine.</p>
+      </div>
+      <div class="grid gap-6 md:grid-cols-2 max-w-3xl mx-auto">
+        
+    <a href="/services/general-repairs-punch-list/" class="card-leander bg-white flex items-center justify-between group hover:border-brand">
+      <div class="flex items-center gap-4">
+        <div class="h-10 w-10 rounded-lg bg-orange-50 text-brand flex items-center justify-center group-hover:bg-brand group-hover:text-ink transition-colors"><i data-lucide="clipboard-list" class="h-5 w-5"></i></div>
+        <div>
+          <h4 class="font-bold text-ink text-sm group-hover:text-brand transition-colors">General Repairs & Punch List</h4>
+          <p class="text-slate-500 text-xs mt-1">Bundle garage door fixes with other small jobs.</p>
+        </div>
+      </div>
+      <i data-lucide="arrow-right" class="h-4 w-4 text-slate-400 group-hover:text-brand group-hover:translate-x-1 transition-all"></i>
+    </a>
+  
+    <a href="/services/deck-patio-repair/" class="card-leander bg-white flex items-center justify-between group hover:border-brand">
+      <div class="flex items-center gap-4">
+        <div class="h-10 w-10 rounded-lg bg-orange-50 text-brand flex items-center justify-center group-hover:bg-brand group-hover:text-ink transition-colors"><i data-lucide="tree-deciduous" class="h-5 w-5"></i></div>
+        <div>
+          <h4 class="font-bold text-ink text-sm group-hover:text-brand transition-colors">Deck & Patio Repair</h4>
+          <p class="text-slate-500 text-xs mt-1">For other exterior structural repairs.</p>
+        </div>
+      </div>
+      <i data-lucide="arrow-right" class="h-4 w-4 text-slate-400 group-hover:text-brand group-hover:translate-x-1 transition-all"></i>
+    </a>
+  
+      </div>
+    </section>
+
+    <!-- FAQs Section -->
+    <section class="mx-auto max-w-5xl px-4 py-16 bg-white">
+      <h2 class="text-2xl font-bold text-ink md:text-4xl text-center">Frequently Asked Questions</h2>
+      <div class="mt-10 max-w-3xl mx-auto space-y-3">
+        
+    <details class="faq-item">
+      <summary>My garage door opener makes noise but the door won't move — can you fix that?</summary>
+      <p class="mt-3 text-slate-700">Often yes — this is frequently a track, roller, or sensor alignment issue rather than a motor failure. We'll diagnose before quoting a fix.</p>
+    </details>
+  
+    <details class="faq-item">
+      <summary>Do you replace garage door springs?</summary>
+      <p class="mt-3 text-slate-700">We assess this case by case for safety reasons — some spring-adjacent hardware work is within scope, but full torsion spring replacement is often referred to a specialist. We'll tell you which applies to your situation.</p>
+    </details>
+  
+    <details class="faq-item">
+      <summary>Can you reprogram a garage door remote or keypad?</summary>
+      <p class="mt-3 text-slate-700">Yes, this is a quick, standard part of garage door service.</p>
+    </details>
+  
+      </div>
+    </section>
+
+    <!-- Estimate / CTA Section -->
+    <section id="estimate-form" class="bg-slate-50 border-t border-slate-200">
+      <div class="mx-auto grid max-w-7xl gap-10 px-4 py-16 lg:grid-cols-2">
+        <div>
+          <h2 class="text-2xl font-bold text-ink md:text-4xl">Ready to Get It Fixed?</h2>
+          <p class="mt-4 text-lg text-slate-700">Send us a few details and we'll give you a straight estimate before you commit to anything.</p>
+          <div class="mt-6 flex flex-wrap gap-4">
+            <a href="tel:8055550142" class="btn-primary">Call or Text (805) 555-0142</a>
+          </div>
+        </div>
+
+        <form class="card-leander bg-white">
+          <h3 class="text-xl font-bold text-ink">Get a Free Estimate</h3>
+          <div class="mt-4 space-y-4">
+            <label class="block">Name<input type="text" name="name" class="mt-1 w-full rounded border border-slate-300 px-3 py-2" required></label>
+            <label class="block">Phone<input type="tel" name="phone" class="mt-1 w-full rounded border border-slate-300 px-3 py-2" required></label>
+            <label class="block">Email<input type="email" name="email" class="mt-1 w-full rounded border border-slate-300 px-3 py-2" required></label>
+            <label class="block">Service Needed
+              <select name="service" class="mt-1 w-full rounded border border-slate-300 px-3 py-2">
+                <option >General Repairs &amp; Punch List</option>
+                <option >Drywall Repair &amp; Painting</option>
+                <option >Plumbing Fixture Repairs</option>
+                <option >Electrical &amp; Smart Home Installs</option>
+                <option >TV Mounting &amp; Furniture Assembly</option>
+                <option >Fencing, Gates &amp; Pet Doors</option>
+                <option selected>Garage Doors, Decks &amp; General Repairs</option>
+              </select>
+            </label>
+            <label class="block">Neighborhood
+              <select name="neighborhood" class="mt-1 w-full rounded border border-slate-300 px-3 py-2">
+                <option>Wood Ranch</option>
+                <option>Central Simi Valley</option>
+                <option>East Simi Valley</option>
+                <option>Big Sky</option>
+                <option>Santa Susana</option>
+              </select>
+            </label>
+            <label class="block">Message<textarea name="message" rows="4" class="mt-1 w-full rounded border border-slate-300 px-3 py-2"></textarea></label>
+            <button type="submit" class="btn-primary w-full">Get a Free Estimate →</button>
+          </div>
+        </form>
+      </div>
+    </section>
   </main>
+
+  <footer class="bg-ink pb-24 text-slate-300 md:pb-8">
+    <div class="footer-cta-bar">
+      <div class="mx-auto flex max-w-3xl flex-wrap items-center justify-center gap-4">
+        <a href="#estimate-form" class="btn-primary">Get a Free Estimate →</a>
+        <a href="tel:8055550142" class="btn-ghost border-white/40">Call or Text (805) 555-0142</a>
+      </div>
+      <p class="mx-auto mt-5 max-w-3xl text-sm text-slate-400">Also serving nearby: Moorpark, Thousand Oaks, and Chatsworth.</p>
+    </div>
+    <div class="mx-auto grid max-w-7xl gap-8 px-4 py-12 md:grid-cols-4">
+      <div>
+        <p class="text-lg font-extrabold uppercase tracking-wide text-brand">Simi Valley Handyman Co.</p>
+        <p class="mt-3 text-sm">Local same-day handyman help for Simi Valley homeowners who want straightforward repairs and clear pricing.</p>
+      </div>
+      <div>
+        <h2 class="text-sm font-bold uppercase tracking-wide text-brand">Contact</h2>
+        <ul class="mt-3 space-y-2 text-sm">
+          <li><a href="tel:8055550142" class="text-lg font-bold text-white hover:text-brand">(805) 555-0142</a></li>
+          <li><a href="mailto:info@example.com" class="hover:text-brand">info@example.com</a></li>
+          <li>123 Main St, Simi Valley, CA 93065</li>
+          <li>Hours: Mon–Sat, 8:00 AM – 6:00 PM</li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="text-sm font-bold uppercase tracking-wide text-brand">Services</h2>
+        <ul class="mt-3 space-y-2 text-sm">
+          <li><a href="/services/general-repairs-punch-list/" class="hover:text-brand">General Repairs &amp; Punch List</a></li>
+          <li><a href="/services/drywall-repair/" class="hover:text-brand">Drywall Repair</a></li>
+          <li><a href="/services/painting-interior-exterior/" class="hover:text-brand">Painting &amp; Staining</a></li>
+          <li><a href="/services/plumbing-fixture-repair/" class="hover:text-brand">Plumbing Fixture Repair</a></li>
+          <li><a href="/services/electrical-fixture-install/" class="hover:text-brand">Electrical Fixture Install</a></li>
+          <li><a href="/services/smart-home-device-install/" class="hover:text-brand">Smart Home Device Install</a></li>
+          <li><a href="/services/tv-mounting-furniture-assembly/" class="hover:text-brand">TV Mounting &amp; Assembly</a></li>
+          <li><a href="/services/fencing-gates-pet-doors/" class="hover:text-brand">Fencing, Gates &amp; Pet Doors</a></li>
+          <li><a href="/services/garage-door-repair/" class="hover:text-brand">Garage Door Repair</a></li>
+          <li><a href="/services/deck-patio-repair/" class="hover:text-brand">Deck &amp; Patio Repair</a></li>
+          <li><a href="/services/gutter-cleaning-repair/" class="hover:text-brand">Gutter Cleaning &amp; Repair</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="text-sm font-bold uppercase tracking-wide text-brand">Areas We Serve</h2>
+        <ul class="mt-3 space-y-2 text-sm">
+          <li><a href="/locations/simi-valley/" class="hover:text-brand">Simi Valley</a></li>
+          <li><a href="/locations/simi-valley/wood-ranch/" class="hover:text-brand">Wood Ranch</a></li>
+          <li><a href="/locations/simi-valley/central-simi-valley/" class="hover:text-brand">Central Simi Valley</a></li>
+          <li><a href="/locations/simi-valley/east-simi-valley/" class="hover:text-brand">East Simi Valley</a></li>
+          <li><a href="/locations/simi-valley/big-sky/" class="hover:text-brand">Big Sky</a></li>
+          <li><a href="/locations/simi-valley/santa-susana/" class="hover:text-brand">Santa Susana</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-white/10 px-4 py-4 text-center text-xs text-slate-500">
+      <div class="flex flex-wrap items-center justify-center gap-4 mb-2">
+        <a href="/privacy-policy/" class="hover:text-white transition-colors">Privacy Policy</a>
+        <a href="/terms-of-service/" class="hover:text-white transition-colors">Terms of Service</a>
+        <a href="/disclaimer/" class="hover:text-white transition-colors">Disclaimer</a>
+        <a href="/accessibility-statement/" class="hover:text-white transition-colors">Accessibility Statement</a>
+      </div>
+      © <script>document.write(new Date().getFullYear())</script> Simi Valley Handyman Co. All rights reserved.
+    </div>
+  </footer>
+
+  <div class="sticky-cta md:hidden">
+    <div class="min-w-0 flex-1">
+      <span class="sticky-cta__badge">Get a Free Estimate</span>
+      <p class="mt-1 text-sm font-semibold text-white">Same-Day Response</p>
+      <p class="text-xs text-slate-400">Licensed-Scope &amp; Insured</p>
+    </div>
+    <a href="tel:8055550142" class="sticky-cta__phone shrink-0">📞 (805) 555-0142</a>
+  </div>
+
+  <script type="module" src="/assets/js/main.js"></script>
+  <script>
+    lucide.createIcons();
+  </script>
+
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Garage Door Repair in Simi Valley, CA",
+  "serviceType": "Handyman Services",
+  "provider": {
+    "@type": "HomeAndConstructionBusiness",
+    "name": "Simi Valley Handyman Co.",
+    "telephone": "(805) 555-0142",
+    "image": "/assets/image/handyman simi valley logo.webp",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Simi Valley",
+      "addressRegion": "CA",
+      "addressCountry": "US"
+    }
+  },
+  "areaServed": "Simi Valley, CA",
+  "description": "Garage door spring, opener, and track repair in Simi Valley, CA. Fast, safe garage door fixes. Free estimate."
+}
+  </script>
+
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "My garage door opener makes noise but the door won't move — can you fix that?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Often yes — this is frequently a track, roller, or sensor alignment issue rather than a motor failure. We'll diagnose before quoting a fix."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you replace garage door springs?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We assess this case by case for safety reasons — some spring-adjacent hardware work is within scope, but full torsion spring replacement is often referred to a specialist. We'll tell you which applies to your situation."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you reprogram a garage door remote or keypad?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, this is a quick, standard part of garage door service."
+      }
+    }
+  ]
+}
+  </script>
 </body>
 </html>

@@ -1,16 +1,673 @@
-﻿<!doctype html>
-<html lang='en'>
+<!doctype html>
+<html lang="en">
 <head>
-  <meta charset='UTF-8'>
-  <meta name='viewport' content='width=device-width, initial-scale=1.0'>  <title>Handyman FAQs Simi Valley</title>
-  <meta name='description' content='Content for this Simi Valley handyman page is coming soon.'>
-  <link rel='canonical' href='https://www.example.com/faq/'>
-  <script src='https://cdn.tailwindcss.com'></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Handyman FAQ | Simi Valley, CA | Simi Valley Handyman Co.</title>
+  <meta name="description" content="Answers to real questions Simi Valley homeowners ask about handyman services — pricing, licensing, scheduling, and what to expect. Read before you call.">
+  <link rel="canonical" href="https://www.example.com/faq/">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: "#f59e0b",
+            accent: "#f59e0b",
+            branddark: "#d97706",
+            gold: "#fbbf24",
+            ink: "#0b1220",
+            "ink-light": "#151f33"
+          }
+        }
+      }
+    };
+  </script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="/assets/css/site.css">
+
+  <link rel="icon" type="image/webp" href="/assets/image/handyman simi valley logo.webp">
 </head>
-<body class='bg-slate-50 text-slate-900'>
-  <main class='mx-auto max-w-4xl px-4 py-20'>    <h1 class='text-3xl font-bold'>Frequently Asked Questions</h1>
-    <p class='mt-4 text-slate-700'>Content coming soon.</p>
-    <p class='mt-6'><a class='text-blue-700 underline' href='/'>Return to homepage</a></p>
+<body class="bg-white text-slate-900">
+  <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:left-2 focus:top-2 focus:z-50 focus:rounded focus:bg-white focus:px-3 focus:py-2 focus:text-sm focus:shadow">Skip to main content</a>
+
+  <header class="z-40 shadow-xl bg-ink relative">
+    <div class="bg-slate-900 border-b border-white/10 text-slate-300">
+      <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-2 text-sm">
+        <div class="flex items-center gap-4">
+          <a href="tel:8055550142" class="font-medium hover:text-brand flex items-center gap-1"><i data-lucide="phone" class="h-4 w-4"></i> Call or Text: (805) 555-0142</a>
+          <span class="hidden text-slate-600 sm:inline">|</span>
+          <nav aria-label="Utility links" class="hidden sm:block">
+            <ul class="flex items-center gap-4">
+              <li><a href="/about/" class="hover:text-brand transition-colors">About</a></li>
+              <li><a href="/contact/" class="hover:text-brand transition-colors">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="flex items-center gap-4">
+          <a href="#estimate-form" class="btn-primary hidden px-4 py-1.5 text-sm sm:inline-flex items-center gap-2">Get a Free Estimate</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-ink">
+      <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-3">
+        <a href="/" class="inline-flex items-center gap-3">
+          <img
+            src="/assets/image/handyman simi valley logo.webp"
+            alt="Handyman Simi Valley logo"
+            title="Handyman Simi Valley"
+            class="h-16 md:h-20 w-[220px] md:w-[320px] object-contain scale-110 md:scale-125 origin-left"
+            loading="eager"
+            decoding="async"
+          >
+        </a>
+
+        <button id="menu-toggle" type="button" class="inline-flex rounded border border-white/20 text-white px-3 py-2 md:hidden hover:bg-white/10" aria-expanded="false" aria-controls="mobile-menu">
+          <span class="sr-only">Open menu</span>
+          <i data-lucide="menu" class="h-6 w-6"></i>
+        </button>
+
+        <nav class="hidden items-center gap-6 md:flex" aria-label="Main navigation">
+          <a href="/" class="font-medium text-brand">Home</a>
+
+          <div class="group relative">
+            <button type="button" class="inline-flex items-center gap-1 font-medium text-white hover:text-brand transition-colors">Services <span aria-hidden="true" class="text-xs">▾</span></button>
+            <ul class="nav-dropdown absolute left-0 top-full z-50 mt-2 w-80 rounded-xl border border-slate-200 bg-white p-2 shadow-lg text-slate-900">
+              <li><a class="block rounded px-3 py-2 hover:bg-slate-50" href="/handyman-services-simi-valley-ca/">All Handyman Services</a></li>
+              <li><a class="block rounded px-3 py-2 hover:bg-slate-50" href="/services/general-repairs-punch-list/">General Repairs &amp; Punch List</a></li>
+              <li><a class="block rounded px-3 py-2 hover:bg-slate-50" href="/services/drywall-repair/">Drywall Repair</a></li>
+              <li><a class="block rounded px-3 py-2 hover:bg-slate-50" href="/services/painting-interior-exterior/">Painting Interior &amp; Exterior</a></li>
+              <li><a class="block rounded px-3 py-2 hover:bg-slate-50" href="/services/plumbing-fixture-repair/">Plumbing Fixture Repair</a></li>
+              <li><a class="block rounded px-3 py-2 hover:bg-slate-50" href="/services/electrical-fixture-install/">Electrical Fixture Install</a></li>
+              <li><a class="block rounded px-3 py-2 hover:bg-slate-50" href="/services/smart-home-device-install/">Smart Home Device Install</a></li>
+              <li><a class="block rounded px-3 py-2 hover:bg-slate-50" href="/services/tv-mounting-furniture-assembly/">TV Mounting &amp; Furniture Assembly</a></li>
+              <li><a class="block rounded px-3 py-2 hover:bg-slate-50" href="/services/fencing-gates-pet-doors/">Fencing, Gates &amp; Pet Doors</a></li>
+              <li><a class="block rounded px-3 py-2 hover:bg-slate-50" href="/services/garage-door-repair/">Garage Door Repair</a></li>
+              <li><a class="block rounded px-3 py-2 hover:bg-slate-50" href="/services/deck-patio-repair/">Deck &amp; Patio Repair</a></li>
+              <li><a class="block rounded px-3 py-2 hover:bg-slate-50" href="/services/gutter-cleaning-repair/">Gutter Cleaning &amp; Repair</a></li>
+              <li><a class="block rounded px-3 py-2 hover:bg-slate-50" href="/services/sprinkler-irrigation-repair/">Sprinkler &amp; Irrigation Repair</a></li>
+              <li><a class="block rounded px-3 py-2 hover:bg-slate-50" href="/services/aging-in-place-modifications/">Aging in Place Modifications</a></li>
+            </ul>
+          </div>
+
+          <div class="group relative">
+            <button type="button" class="inline-flex items-center gap-1 font-medium text-white hover:text-brand transition-colors">Locations <span aria-hidden="true" class="text-xs">▾</span></button>
+            <ul class="nav-dropdown absolute left-0 top-full z-50 mt-2 w-72 rounded-xl border border-slate-200 bg-white p-2 shadow-lg text-slate-900">
+              <li><a class="block rounded px-3 py-2 hover:bg-slate-50" href="/locations/simi-valley/">Simi Valley</a></li>
+              <li><a class="block rounded px-3 py-2 hover:bg-slate-50" href="/locations/simi-valley/wood-ranch/">Wood Ranch</a></li>
+              <li><a class="block rounded px-3 py-2 hover:bg-slate-50" href="/locations/simi-valley/central-simi-valley/">Central Simi Valley</a></li>
+              <li><a class="block rounded px-3 py-2 hover:bg-slate-50" href="/locations/simi-valley/east-simi-valley/">East Simi Valley</a></li>
+              <li><a class="block rounded px-3 py-2 hover:bg-slate-50" href="/locations/simi-valley/big-sky/">Big Sky</a></li>
+              <li><a class="block rounded px-3 py-2 hover:bg-slate-50" href="/locations/simi-valley/santa-susana/">Santa Susana</a></li>
+            </ul>
+          </div>
+
+          <a href="/pricing/handyman-cost-simi-valley/" class="font-medium text-white hover:text-brand transition-colors">Pricing</a>
+          <a href="/blog/" class="font-medium text-white hover:text-brand transition-colors">Blog</a>
+          <a href="/faq/" class="font-medium text-white hover:text-brand transition-colors">FAQ</a>
+        </nav>
+      </div>
+
+      <nav id="mobile-menu" class="hidden border-t border-white/10 bg-ink px-4 py-3 md:hidden text-white" aria-label="Mobile navigation">
+        <ul class="space-y-3">
+          <li><a href="/" class="block font-medium text-brand">Home</a></li>
+          <li><a href="/handyman-services-simi-valley-ca/" class="block hover:text-brand">All Services</a></li>
+          <li><a href="/locations/simi-valley/" class="block hover:text-brand">Locations</a></li>
+          <li><a href="/pricing/handyman-cost-simi-valley/" class="block hover:text-brand">Pricing</a></li>
+          <li><a href="/blog/" class="block hover:text-brand">Blog</a></li>
+          <li><a href="/faq/" class="block hover:text-brand">FAQ</a></li>
+          <li><a href="/about/" class="block hover:text-brand">About</a></li>
+          <li><a href="/contact/" class="block hover:text-brand">Contact</a></li>
+          <li><a href="#estimate-form" class="block text-brand font-bold">Get a Free Estimate</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="hero-leander">
+      <img
+        src="/assets/image/general-repairs-hero.png" 
+        alt="Handyman FAQ"
+        class="hero-leander__bg"
+        loading="eager"
+        decoding="async"
+      >
+      <div class="hero-leander__overlay" aria-hidden="true"></div>
+      <div class="hero-leander__content">
+        <nav class="mb-4 text-xs font-semibold uppercase tracking-wider text-slate-300 flex items-center justify-center gap-2" aria-label="Breadcrumb">
+          <a href="/" class="hover:text-brand transition-colors text-slate-200">Home</a>
+          <i data-lucide="chevron-right" class="h-3 w-3 text-slate-400"></i>
+          <span class="text-white font-bold">FAQ</span>
+        </nav>
+        <h1 class="text-3xl font-extrabold leading-tight md:text-5xl lg:text-[3.25rem] text-white">Handyman FAQ — Simi Valley, CA</h1>
+        <p class="mx-auto mt-5 max-w-2xl text-lg text-slate-200">Real questions Simi Valley homeowners actually ask, pulled from local searches, community groups, and calls we get.</p>
+        <div class="mt-8 flex flex-wrap items-center justify-center gap-4">
+          <a href="tel:8055550142" class="btn-primary text-base">📞 Call or Text: (805) 555-0142</a>
+          <a href="#estimate-form" class="btn-ghost text-base">Get a Free Estimate →</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-16 md:py-24">
+      <div class="mx-auto max-w-3xl px-4">
+        
+        <p class="text-lg text-slate-600 mb-8 italic">Note: this page goes deeper than the short FAQ on our homepage — if you just need a quick answer, the homepage FAQ covers the basics. This page is the full guide.</p>
+        
+        <div class="flex flex-wrap gap-2 mb-10"><a href="#getting-started-booking" class="rounded-full bg-slate-100 px-4 py-1.5 text-sm font-medium text-slate-700 hover:bg-slate-200">Getting Started & Booking</a><a href="#pricing-payment" class="rounded-full bg-slate-100 px-4 py-1.5 text-sm font-medium text-slate-700 hover:bg-slate-200">Pricing & Payment</a><a href="#licensing-insurance-trust" class="rounded-full bg-slate-100 px-4 py-1.5 text-sm font-medium text-slate-700 hover:bg-slate-200">Licensing, Insurance & Trust</a><a href="#services-scope" class="rounded-full bg-slate-100 px-4 py-1.5 text-sm font-medium text-slate-700 hover:bg-slate-200">Services & Scope</a><a href="#should-i-hire-a-handyman-or-a-specialist-" class="rounded-full bg-slate-100 px-4 py-1.5 text-sm font-medium text-slate-700 hover:bg-slate-200">Should I Hire a Handyman or a Specialist?</a><a href="#local-simi-valley-questions" class="rounded-full bg-slate-100 px-4 py-1.5 text-sm font-medium text-slate-700 hover:bg-slate-200">Local Simi Valley Questions</a><a href="#warranty-guarantee" class="rounded-full bg-slate-100 px-4 py-1.5 text-sm font-medium text-slate-700 hover:bg-slate-200">Warranty & Guarantee</a></div>
+
+        <h2 id="getting-started-booking" class="text-2xl font-bold text-ink mt-12 mb-6 scroll-mt-24">Getting Started & Booking</h2><div class="space-y-4">
+    <details class="group rounded-lg bg-slate-50 p-6 [&_summary::-webkit-details-marker]:hidden">
+      <summary class="flex cursor-pointer items-center justify-between font-bold text-ink">
+        <span>How do I schedule a handyman visit in Simi Valley?</span>
+        <span class="transition group-open:rotate-180">
+          <svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+        </span>
+      </summary>
+      <div class="mt-4 text-slate-600 prose prose-sm max-w-none">Call or text <a href="tel:8055550142">(805) 555-0142</a>, or fill out the <a href="/#estimate-form">free estimate form</a> with a description of what needs fixing. We'll confirm a time and give you a price range before anyone shows up.</div>
+    </details>
+    <details class="group rounded-lg bg-slate-50 p-6 [&_summary::-webkit-details-marker]:hidden">
+      <summary class="flex cursor-pointer items-center justify-between font-bold text-ink">
+        <span>Do you offer free estimates?</span>
+        <span class="transition group-open:rotate-180">
+          <svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+        </span>
+      </summary>
+      <div class="mt-4 text-slate-600 prose prose-sm max-w-none">[State your actual policy — most handyman businesses do offer free estimates for straightforward jobs; state yours honestly, including any conditions like travel-distance limits.]</div>
+    </details>
+    <details class="group rounded-lg bg-slate-50 p-6 [&_summary::-webkit-details-marker]:hidden">
+      <summary class="flex cursor-pointer items-center justify-between font-bold text-ink">
+        <span>How much notice do you need to book a job?</span>
+        <span class="transition group-open:rotate-180">
+          <svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+        </span>
+      </summary>
+      <div class="mt-4 text-slate-600 prose prose-sm max-w-none">For non-urgent jobs, [state your typical scheduling window]. For urgent issues — an active leak, a broken lock, a safety hazard — we prioritize same-day availability where possible.</div>
+    </details>
+    <details class="group rounded-lg bg-slate-50 p-6 [&_summary::-webkit-details-marker]:hidden">
+      <summary class="flex cursor-pointer items-center justify-between font-bold text-ink">
+        <span>What information should I have ready when I call?</span>
+        <span class="transition group-open:rotate-180">
+          <svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+        </span>
+      </summary>
+      <div class="mt-4 text-slate-600 prose prose-sm max-w-none">A clear description of what's wrong (or photos, if you can send them), which Simi Valley neighborhood you're in, and whether it's urgent. The more specific you can be, the more accurate our estimate before we even arrive.</div>
+    </details>
+    <details class="group rounded-lg bg-slate-50 p-6 [&_summary::-webkit-details-marker]:hidden">
+      <summary class="flex cursor-pointer items-center justify-between font-bold text-ink">
+        <span>Can I get same-day service?</span>
+        <span class="transition group-open:rotate-180">
+          <svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+        </span>
+      </summary>
+      <div class="mt-4 text-slate-600 prose prose-sm max-w-none">Yes, based on same-day availability — call <a href="tel:8055550142">(805) 555-0142</a> and we'll tell you honestly whether we can get there today, rather than promise something we can't deliver.</div>
+    </details></div><h2 id="pricing-payment" class="text-2xl font-bold text-ink mt-12 mb-6 scroll-mt-24">Pricing & Payment</h2><div class="space-y-4">
+    <details class="group rounded-lg bg-slate-50 p-6 [&_summary::-webkit-details-marker]:hidden">
+      <summary class="flex cursor-pointer items-center justify-between font-bold text-ink">
+        <span>How much does a handyman cost in Simi Valley, CA?</span>
+        <span class="transition group-open:rotate-180">
+          <svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+        </span>
+      </summary>
+      <div class="mt-4 text-slate-600 prose prose-sm max-w-none">It depends on the job — small fixture swaps and flat-rate jobs cost less than multi-hour repairs billed hourly. See our full <a href="/pricing/handyman-cost-simi-valley/">pricing guide</a> for a real breakdown by job type.</div>
+    </details>
+    <details class="group rounded-lg bg-slate-50 p-6 [&_summary::-webkit-details-marker]:hidden">
+      <summary class="flex cursor-pointer items-center justify-between font-bold text-ink">
+        <span>Do you charge a flat rate or an hourly rate?</span>
+        <span class="transition group-open:rotate-180">
+          <svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+        </span>
+      </summary>
+      <div class="mt-4 text-slate-600 prose prose-sm max-w-none">Both, depending on the job. Small, predictable jobs (a single fixture install, a TV mount) are often flat-rate. Larger or less predictable jobs are billed hourly with a stated minimum.</div>
+    </details>
+    <details class="group rounded-lg bg-slate-50 p-6 [&_summary::-webkit-details-marker]:hidden">
+      <summary class="flex cursor-pointer items-center justify-between font-bold text-ink">
+        <span>Is there a minimum job charge?</span>
+        <span class="transition group-open:rotate-180">
+          <svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+        </span>
+      </summary>
+      <div class="mt-4 text-slate-600 prose prose-sm max-w-none">Yes — [state your minimum]. This covers the cost of scheduling and traveling to the job regardless of size, which is standard across the trade.</div>
+    </details>
+    <details class="group rounded-lg bg-slate-50 p-6 [&_summary::-webkit-details-marker]:hidden">
+      <summary class="flex cursor-pointer items-center justify-between font-bold text-ink">
+        <span>What payment methods do you accept?</span>
+        <span class="transition group-open:rotate-180">
+          <svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+        </span>
+      </summary>
+      <div class="mt-4 text-slate-600 prose prose-sm max-w-none">[List: cash, check, card, Venmo/Zelle, etc.]</div>
+    </details>
+    <details class="group rounded-lg bg-slate-50 p-6 [&_summary::-webkit-details-marker]:hidden">
+      <summary class="flex cursor-pointer items-center justify-between font-bold text-ink">
+        <span>Why do handyman quotes vary so much between companies?</span>
+        <span class="transition group-open:rotate-180">
+          <svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+        </span>
+      </summary>
+      <div class="mt-4 text-slate-600 prose prose-sm max-w-none">Price differences usually come down to insurance coverage, materials markup, experience, and whether the quote is honest about the full scope upfront. An unusually low quote can be a sign of missing insurance or hidden add-ons once the job starts — see our <a href="/pricing/handyman-cost-simi-valley/">pricing page</a> for more on this.</div>
+    </details>
+    <details class="group rounded-lg bg-slate-50 p-6 [&_summary::-webkit-details-marker]:hidden">
+      <summary class="flex cursor-pointer items-center justify-between font-bold text-ink">
+        <span>Do you charge extra for emergency or same-day service?</span>
+        <span class="transition group-open:rotate-180">
+          <svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+        </span>
+      </summary>
+      <div class="mt-4 text-slate-600 prose prose-sm max-w-none">[State your actual policy — many handyman businesses do charge a premium for true same-day/emergency work; state yours honestly.]</div>
+    </details></div><h2 id="licensing-insurance-trust" class="text-2xl font-bold text-ink mt-12 mb-6 scroll-mt-24">Licensing, Insurance & Trust</h2><div class="space-y-4">
+    <details class="group rounded-lg bg-slate-50 p-6 [&_summary::-webkit-details-marker]:hidden">
+      <summary class="flex cursor-pointer items-center justify-between font-bold text-ink">
+        <span>Are you a licensed contractor?</span>
+        <span class="transition group-open:rotate-180">
+          <svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+        </span>
+      </summary>
+      <div class="mt-4 text-slate-600 prose prose-sm max-w-none">We operate within California's unlicensed-handyman limit — $500 total per job, labor and materials combined. For anything above that scope, we'll tell you directly and point you toward a licensed contractor rather than take on work outside what's legal.</div>
+    </details>
+    <details class="group rounded-lg bg-slate-50 p-6 [&_summary::-webkit-details-marker]:hidden">
+      <summary class="flex cursor-pointer items-center justify-between font-bold text-ink">
+        <span>What's the difference between a handyman and a licensed contractor in California?</span>
+        <span class="transition group-open:rotate-180">
+          <svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+        </span>
+      </summary>
+      <div class="mt-4 text-slate-600 prose prose-sm max-w-none">A handyman can legally take on any job where combined labor and materials total $500 or less. Above that dollar amount, or for structural, major electrical, or major plumbing work, California law requires a licensed contractor — the closest formal license for smaller remodeling-type work is the CSLB B2 Residential Remodeling license.</div>
+    </details>
+    <details class="group rounded-lg bg-slate-50 p-6 [&_summary::-webkit-details-marker]:hidden">
+      <summary class="flex cursor-pointer items-center justify-between font-bold text-ink">
+        <span>Are you insured?</span>
+        <span class="transition group-open:rotate-180">
+          <svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+        </span>
+      </summary>
+      <div class="mt-4 text-slate-600 prose prose-sm max-w-none">[State your actual coverage once confirmed — general liability insurance, etc. Do not state coverage that doesn't exist.]</div>
+    </details>
+    <details class="group rounded-lg bg-slate-50 p-6 [&_summary::-webkit-details-marker]:hidden">
+      <summary class="flex cursor-pointer items-center justify-between font-bold text-ink">
+        <span>How do I verify a handyman is legitimate before hiring them?</span>
+        <span class="transition group-open:rotate-180">
+          <svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+        </span>
+      </summary>
+      <div class="mt-4 text-slate-600 prose prose-sm max-w-none">Ask directly whether they're staying within the $500 unlicensed-work cap or hold an actual contractor license, and don't be put off if they ask you the same clarifying questions about your job — a legitimate handyman should be upfront about scope, not vague about it. You can also verify any claimed contractor license directly through the California Contractors State License Board (CSLB).</div>
+    </details>
+    <details class="group rounded-lg bg-slate-50 p-6 [&_summary::-webkit-details-marker]:hidden">
+      <summary class="flex cursor-pointer items-center justify-between font-bold text-ink">
+        <span>What happens if my job turns out to need a licensed contractor?</span>
+        <span class="transition group-open:rotate-180">
+          <svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+        </span>
+      </summary>
+      <div class="mt-4 text-slate-600 prose prose-sm max-w-none">We'll tell you plainly rather than take on work outside legal scope. We'd rather refer you to the right person than risk doing a job we're not licensed to do.</div>
+    </details></div><h2 id="services-scope" class="text-2xl font-bold text-ink mt-12 mb-6 scroll-mt-24">Services & Scope</h2><div class="space-y-4">
+    <details class="group rounded-lg bg-slate-50 p-6 [&_summary::-webkit-details-marker]:hidden">
+      <summary class="flex cursor-pointer items-center justify-between font-bold text-ink">
+        <span>What services do you offer?</span>
+        <span class="transition group-open:rotate-180">
+          <svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+        </span>
+      </summary>
+      <div class="mt-4 text-slate-600 prose prose-sm max-w-none">Drywall repair, painting, plumbing fixture repairs, electrical fixtures and smart home installs, TV mounting and furniture assembly, fencing and pet doors, garage door repair, deck and patio repair, and general punch-list repairs. See our <a href="/handyman-services-simi-valley-ca/">full services page</a> for details on each.</div>
+    </details>
+    <details class="group rounded-lg bg-slate-50 p-6 [&_summary::-webkit-details-marker]:hidden">
+      <summary class="flex cursor-pointer items-center justify-between font-bold text-ink">
+        <span>Do you handle plumbing and electrical work?</span>
+        <span class="transition group-open:rotate-180">
+          <svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+        </span>
+      </summary>
+      <div class="mt-4 text-slate-600 prose prose-sm max-w-none">Yes, within handyman scope — fixture-level plumbing (faucets, toilets, disposals, P-traps) and fixture-level electrical (light fixtures, switches, outlets, ceiling fans). New circuits, gas line work, sewer work, and anything beyond fixture-level repair legally needs a licensed plumber or electrician, and we'll tell you if that's what your job needs.</div>
+    </details>
+    <details class="group rounded-lg bg-slate-50 p-6 [&_summary::-webkit-details-marker]:hidden">
+      <summary class="flex cursor-pointer items-center justify-between font-bold text-ink">
+        <span>Can you help with small jobs, or only bigger projects?</span>
+        <span class="transition group-open:rotate-180">
+          <svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+        </span>
+      </summary>
+      <div class="mt-4 text-slate-600 prose prose-sm max-w-none">Small jobs are most of what we do. A single ceiling fan or one drywall patch is a normal call for us, not a minimum-job hassle.</div>
+    </details>
+    <details class="group rounded-lg bg-slate-50 p-6 [&_summary::-webkit-details-marker]:hidden">
+      <summary class="flex cursor-pointer items-center justify-between font-bold text-ink">
+        <span>Do you bring your own tools and materials?</span>
+        <span class="transition group-open:rotate-180">
+          <svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+        </span>
+      </summary>
+      <div class="mt-4 text-slate-600 prose prose-sm max-w-none">Yes. For jobs needing specific fixtures or finishes (a particular faucet model, matching paint), we'll confirm with you first or you're welcome to supply your own.</div>
+    </details>
+    <details class="group rounded-lg bg-slate-50 p-6 [&_summary::-webkit-details-marker]:hidden">
+      <summary class="flex cursor-pointer items-center justify-between font-bold text-ink">
+        <span>Is there anything a handyman legally cannot do in California?</span>
+        <span class="transition group-open:rotate-180">
+          <svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+        </span>
+      </summary>
+      <div class="mt-4 text-slate-600 prose prose-sm max-w-none">Yes — structural work, new electrical circuits, gas line work, and any job where combined labor and materials exceed $500 all legally require a licensed contractor. We'll flag this before starting rather than take on work outside what's legal.</div>
+    </details></div><h2 id="should-i-hire-a-handyman-or-a-specialist-" class="text-2xl font-bold text-ink mt-12 mb-6 scroll-mt-24">Should I Hire a Handyman or a Specialist?</h2><div class="space-y-4">
+    <details class="group rounded-lg bg-slate-50 p-6 [&_summary::-webkit-details-marker]:hidden">
+      <summary class="flex cursor-pointer items-center justify-between font-bold text-ink">
+        <span>Should I hire a handyman or call a licensed plumber/electrician?</span>
+        <span class="transition group-open:rotate-180">
+          <svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+        </span>
+      </summary>
+      <div class="mt-4 text-slate-600 prose prose-sm max-w-none">For fixture swaps, drain clogs, and simple repairs — a handyman is usually faster and cheaper. For anything involving new circuits, gas lines, sewer work, or a job likely to exceed $500 in labor and materials, it legally needs a licensed plumber, electrician, or contractor. If you're not sure which one your job needs, tell us what's going on and we'll give you a straight answer, even if that means referring you out.</div>
+    </details>
+    <details class="group rounded-lg bg-slate-50 p-6 [&_summary::-webkit-details-marker]:hidden">
+      <summary class="flex cursor-pointer items-center justify-between font-bold text-ink">
+        <span>Can I fix water damage myself, or should I call a professional?</span>
+        <span class="transition group-open:rotate-180">
+          <svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+        </span>
+      </summary>
+      <div class="mt-4 text-slate-600 prose prose-sm max-w-none">Minor surface drying and a small drywall patch are within reach for a handy homeowner, but if the water damage is from an unresolved leak, involves a large area, or you suspect mold, that's worth a professional assessment first — patching over an active problem just means dealing with it twice.</div>
+    </details>
+    <details class="group rounded-lg bg-slate-50 p-6 [&_summary::-webkit-details-marker]:hidden">
+      <summary class="flex cursor-pointer items-center justify-between font-bold text-ink">
+        <span>What should I do if I notice a roof leak?</span>
+        <span class="transition group-open:rotate-180">
+          <svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+        </span>
+      </summary>
+      <div class="mt-4 text-slate-600 prose prose-sm max-w-none">Contain what you can (a bucket, moving anything valuable out of the drip path) and address the roof itself with a roofer as soon as possible — a handyman can help with the resulting interior drywall repair once the leak source is fixed, but roof repair itself is outside handyman scope.</div>
+    </details>
+    <details class="group rounded-lg bg-slate-50 p-6 [&_summary::-webkit-details-marker]:hidden">
+      <summary class="flex cursor-pointer items-center justify-between font-bold text-ink">
+        <span>Is it safe to install a ceiling fan myself?</span>
+        <span class="transition group-open:rotate-180">
+          <svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+        </span>
+      </summary>
+      <div class="mt-4 text-slate-600 prose prose-sm max-w-none">It depends on your comfort with electrical work and whether the existing electrical box is rated to support a fan's weight — a light fixture box often isn't. If you're not confident about that distinction, this is a quick, inexpensive job for a professional and one of our most requested services.</div>
+    </details></div><h2 id="local-simi-valley-questions" class="text-2xl font-bold text-ink mt-12 mb-6 scroll-mt-24">Local Simi Valley Questions</h2><div class="space-y-4">
+    <details class="group rounded-lg bg-slate-50 p-6 [&_summary::-webkit-details-marker]:hidden">
+      <summary class="flex cursor-pointer items-center justify-between font-bold text-ink">
+        <span>Do you serve all Simi Valley neighborhoods?</span>
+        <span class="transition group-open:rotate-180">
+          <svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+        </span>
+      </summary>
+      <div class="mt-4 text-slate-600 prose prose-sm max-w-none">Yes — Wood Ranch, Central Simi Valley, East Simi Valley, Big Sky, and Santa Susana. See our <a href="/#neighborhoods">neighborhoods section</a> for area-specific detail.</div>
+    </details>
+    <details class="group rounded-lg bg-slate-50 p-6 [&_summary::-webkit-details-marker]:hidden">
+      <summary class="flex cursor-pointer items-center justify-between font-bold text-ink">
+        <span>Do you serve areas outside Simi Valley?</span>
+        <span class="transition group-open:rotate-180">
+          <svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+        </span>
+      </summary>
+      <div class="mt-4 text-slate-600 prose prose-sm max-w-none">We also serve Moorpark, Thousand Oaks, and Chatsworth.</div>
+    </details>
+    <details class="group rounded-lg bg-slate-50 p-6 [&_summary::-webkit-details-marker]:hidden">
+      <summary class="flex cursor-pointer items-center justify-between font-bold text-ink">
+        <span>How should I prepare my Simi Valley home for wildfire season?</span>
+        <span class="transition group-open:rotate-180">
+          <svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+        </span>
+      </summary>
+      <div class="mt-4 text-slate-600 prose prose-sm max-w-none">Clear gutters and roof debris, seal gaps around eaves and vents where embers can catch, and check that fence panels near the house are secure. Read our <a href="/blog/wildfire-home-hardening-simi-valley/">full wildfire prep checklist</a> for more.</div>
+    </details>
+    <details class="group rounded-lg bg-slate-50 p-6 [&_summary::-webkit-details-marker]:hidden">
+      <summary class="flex cursor-pointer items-center justify-between font-bold text-ink">
+        <span>Why do faucets and fixtures wear out faster in Simi Valley homes?</span>
+        <span class="transition group-open:rotate-180">
+          <svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+        </span>
+      </summary>
+      <div class="mt-4 text-slate-600 prose prose-sm max-w-none">Simi Valley's groundwater runs hard, and hard water accelerates wear on faucet cartridges, showerheads, and garbage disposal seals compared to areas with softer water.</div>
+    </details></div><h2 id="warranty-guarantee" class="text-2xl font-bold text-ink mt-12 mb-6 scroll-mt-24">Warranty & Guarantee</h2><div class="space-y-4">
+    <details class="group rounded-lg bg-slate-50 p-6 [&_summary::-webkit-details-marker]:hidden">
+      <summary class="flex cursor-pointer items-center justify-between font-bold text-ink">
+        <span>Do you provide a warranty on your work?</span>
+        <span class="transition group-open:rotate-180">
+          <svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+        </span>
+      </summary>
+      <div class="mt-4 text-slate-600 prose prose-sm max-w-none">Yes — [X days] on workmanship. If something we repaired fails within that window, we come back and make it right at no charge.</div>
+    </details>
+    <details class="group rounded-lg bg-slate-50 p-6 [&_summary::-webkit-details-marker]:hidden">
+      <summary class="flex cursor-pointer items-center justify-between font-bold text-ink">
+        <span>What happens if something you fixed breaks again?</span>
+        <span class="transition group-open:rotate-180">
+          <svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+        </span>
+      </summary>
+      <div class="mt-4 text-slate-600 prose prose-sm max-w-none">Contact us and reference the original job. If it's within the warranty window and related to our original work, we'll come back and fix it at no charge.</div>
+    </details></div>
+
+        <div class="mt-16 rounded-2xl bg-slate-50 p-8 border border-slate-200 text-center">
+            <h2 class="text-2xl font-bold text-ink mb-4">Still Have a Question?</h2>
+            <p class="text-slate-600 mb-6">If you didn't find what you're looking for, call or text <a href="tel:8055550142" class="font-bold text-brand hover:underline">(805) 555-0142</a> and ask directly — we'd rather give you a straight answer than have you guess.</p>
+            <a href="#estimate-form" class="btn-primary">Get a Free Estimate →</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Shared Estimate Form Section -->
+    <section id="estimate-form" class="bg-slate-50 border-t border-slate-200 py-16 md:py-24">
+      <div class="mx-auto max-w-3xl px-4">
+        <div class="mb-12 text-center">
+          <h2 class="text-3xl font-extrabold text-ink md:text-4xl">Ready to Get a Real Number?</h2>
+          <p class="mt-4 text-lg text-slate-600">Tell us what needs fixing and we'll give you an honest estimate.</p>
+        </div>
+        <form class="card-leander p-6 md:p-10">
+          <div class="grid gap-6 md:grid-cols-2">
+            <label class="block">
+              <span class="text-sm font-semibold text-slate-700">Name</span>
+              <input type="text" name="name" class="mt-1 w-full rounded-md border border-slate-300 px-4 py-2 focus:border-brand focus:ring-brand" required>
+            </label>
+            <label class="block">
+              <span class="text-sm font-semibold text-slate-700">Phone</span>
+              <input type="tel" name="phone" class="mt-1 w-full rounded-md border border-slate-300 px-4 py-2 focus:border-brand focus:ring-brand" required>
+            </label>
+            <label class="block md:col-span-2">
+              <span class="text-sm font-semibold text-slate-700">Email</span>
+              <input type="email" name="email" class="mt-1 w-full rounded-md border border-slate-300 px-4 py-2 focus:border-brand focus:ring-brand" required>
+            </label>
+            <label class="block">
+              <span class="text-sm font-semibold text-slate-700">Service Needed</span>
+              <select name="service" class="mt-1 w-full rounded-md border border-slate-300 px-4 py-2 focus:border-brand focus:ring-brand">
+                <option>Drywall Repair &amp; Painting</option>
+                <option>Plumbing Fixture Repairs</option>
+                <option>Electrical &amp; Smart Home Installs</option>
+                <option>TV Mounting &amp; Furniture Assembly</option>
+                <option>Fencing, Gates &amp; Pet Doors</option>
+                <option>Garage Doors, Decks &amp; General Repairs</option>
+                <option>Not Sure / Other</option>
+              </select>
+            </label>
+            <label class="block">
+              <span class="text-sm font-semibold text-slate-700">Neighborhood</span>
+              <select name="neighborhood" class="mt-1 w-full rounded-md border border-slate-300 px-4 py-2 focus:border-brand focus:ring-brand">
+                <option>Wood Ranch</option>
+                <option>Central Simi Valley</option>
+                <option>East Simi Valley</option>
+                <option>Big Sky</option>
+                <option>Santa Susana</option>
+                <option>Moorpark / Thousand Oaks / Chatsworth</option>
+              </select>
+            </label>
+            <label class="block md:col-span-2">
+              <span class="text-sm font-semibold text-slate-700">Message / Details</span>
+              <textarea name="message" rows="4" class="mt-1 w-full rounded-md border border-slate-300 px-4 py-2 focus:border-brand focus:ring-brand" placeholder="Briefly describe the issue..."></textarea>
+            </label>
+            <div class="md:col-span-2">
+              <button type="submit" class="btn-primary w-full py-3 text-lg">Get a Free Estimate →</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
   </main>
+
+  <footer class="bg-ink pb-24 text-slate-300 md:pb-8">
+    <div class="footer-cta-bar">
+      <div class="mx-auto flex max-w-3xl flex-wrap items-center justify-center gap-4">
+        <a href="#estimate-form" class="btn-primary">Get a Free Estimate →</a>
+        <a href="tel:8055550142" class="btn-ghost border-white/40">Call or Text (805) 555-0142</a>
+      </div>
+      <p class="mx-auto mt-5 max-w-3xl text-sm text-slate-400">Also serving nearby: Moorpark, Thousand Oaks, and Chatsworth.</p>
+    </div>
+    <div class="mx-auto grid max-w-7xl gap-8 px-4 py-12 md:grid-cols-4">
+      <div>
+        <p class="text-lg font-extrabold uppercase tracking-wide text-brand">Simi Valley Handyman Co.</p>
+        <p class="mt-3 text-sm">Local same-day handyman help for Simi Valley homeowners who want straightforward repairs and clear pricing.</p>
+      </div>
+      <div>
+        <h2 class="text-sm font-bold uppercase tracking-wide text-brand">Contact</h2>
+        <ul class="mt-3 space-y-2 text-sm">
+          <li><a href="tel:8055550142" class="text-lg font-bold text-white hover:text-brand">(805) 555-0142</a></li>
+          <li><a href="mailto:info@example.com" class="hover:text-brand">info@example.com</a></li>
+          <li>123 Main St, Simi Valley, CA 93065</li>
+          <li>Hours: Mon–Sat, 8:00 AM – 6:00 PM</li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="text-sm font-bold uppercase tracking-wide text-brand">Services</h2>
+        <ul class="mt-3 space-y-2 text-sm">
+          <li><a href="/services/drywall-repair/" class="hover:text-brand">Drywall Repair</a></li>
+          <li><a href="/services/plumbing-fixture-repair/" class="hover:text-brand">Plumbing Fixture Repair</a></li>
+          <li><a href="/services/electrical-fixture-install/" class="hover:text-brand">Electrical Fixture Install</a></li>
+          <li><a href="/services/tv-mounting-furniture-assembly/" class="hover:text-brand">TV Mounting &amp; Assembly</a></li>
+          <li><a href="/services/fencing-gates-pet-doors/" class="hover:text-brand">Fencing, Gates &amp; Pet Doors</a></li>
+          <li><a href="/services/garage-door-repair/" class="hover:text-brand">Garage Door Repair</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="text-sm font-bold uppercase tracking-wide text-brand">Areas We Serve</h2>
+        <ul class="mt-3 space-y-2 text-sm">
+          <li><a href="/locations/simi-valley/" class="hover:text-brand">Simi Valley</a></li>
+          <li><a href="/locations/simi-valley/wood-ranch/" class="hover:text-brand">Wood Ranch</a></li>
+          <li><a href="/locations/simi-valley/central-simi-valley/" class="hover:text-brand">Central Simi Valley</a></li>
+          <li><a href="/locations/simi-valley/east-simi-valley/" class="hover:text-brand">East Simi Valley</a></li>
+          <li><a href="/locations/simi-valley/big-sky/" class="hover:text-brand">Big Sky</a></li>
+          <li><a href="/locations/simi-valley/santa-susana/" class="hover:text-brand">Santa Susana</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-white/10 px-4 py-4 text-center text-xs text-slate-500">
+      <div class="flex flex-wrap items-center justify-center gap-4 mb-2">
+        <a href="/privacy-policy/" class="hover:text-white transition-colors">Privacy Policy</a>
+        <a href="/terms-of-service/" class="hover:text-white transition-colors">Terms of Service</a>
+        <a href="/disclaimer/" class="hover:text-white transition-colors">Disclaimer</a>
+        <a href="/accessibility-statement/" class="hover:text-white transition-colors">Accessibility Statement</a>
+      </div>
+      © <script>document.write(new Date().getFullYear())</script> Simi Valley Handyman Co. All rights reserved.
+    </div>
+  </footer>
+
+  <div class="sticky-cta md:hidden">
+    <div class="min-w-0 flex-1">
+      <span class="sticky-cta__badge">Get a Free Estimate</span>
+      <p class="mt-1 text-sm font-semibold text-white">Same-Day Response</p>
+      <p class="text-xs text-slate-400">Licensed-Scope &amp; Insured</p>
+    </div>
+    <a href="tel:8055550142" class="sticky-cta__phone shrink-0">📞 (805) 555-0142</a>
+  </div>
+
+  <script src="/assets/js/main.js" defer></script>
+  <script>
+    lucide.createIcons();
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HomeAndConstructionBusiness",
+    "name": "[Business Name]",
+    "url": "https://www.example.com/",
+    "telephone": "(805) 555-0142",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Simi Valley",
+      "addressRegion": "CA",
+      "postalCode": "93063, 93065",
+      "addressCountry": "US"
+    },
+    "areaServed": ["Simi Valley", "Wood Ranch", "Central Simi Valley", "East Simi Valley", "Big Sky", "Santa Susana", "Moorpark", "Thousand Oaks", "Chatsworth"]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "serviceType": "Handyman Services",
+    "provider": {
+      "@type": "HomeAndConstructionBusiness",
+      "name": "[Business Name]"
+    },
+    "areaServed": "Simi Valley, CA",
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Simi Valley Handyman Services",
+      "itemListElement": [
+        {"@type":"Offer","itemOffered":{"@type":"Service","name":"Drywall Repair & Painting"}},
+        {"@type":"Offer","itemOffered":{"@type":"Service","name":"Plumbing Fixture Repairs"}},
+        {"@type":"Offer","itemOffered":{"@type":"Service","name":"Electrical Fixtures, Ceiling Fans & Smart Home Installs"}},
+        {"@type":"Offer","itemOffered":{"@type":"Service","name":"TV Mounting & Furniture Assembly"}},
+        {"@type":"Offer","itemOffered":{"@type":"Service","name":"Fencing, Gates & Pet Doors"}},
+        {"@type":"Offer","itemOffered":{"@type":"Service","name":"Garage Doors, Decks & General Repairs"}}
+      ]
+    }
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AggregateRating",
+    "itemReviewed": {
+      "@type": "HomeAndConstructionBusiness",
+      "name": "[Business Name]"
+    },
+    "ratingValue": "[X.X]",
+    "reviewCount": "[X]"
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {"@type":"Question","name":"How do I schedule a handyman visit in Simi Valley?","acceptedAnswer":{"@type":"Answer","text":"Call or text (805) 555-0142, or fill out the free estimate form with a description of what needs fixing. We'll confirm a time and give you a price range before anyone shows up."}},
+      {"@type":"Question","name":"Do you offer free estimates?","acceptedAnswer":{"@type":"Answer","text":"[State your actual policy — most handyman businesses do offer free estimates for straightforward jobs; state yours honestly, including any conditions like travel-distance limits.]"}},
+      {"@type":"Question","name":"How much notice do you need to book a job?","acceptedAnswer":{"@type":"Answer","text":"For non-urgent jobs, [state your typical scheduling window]. For urgent issues — an active leak, a broken lock, a safety hazard — we prioritize same-day availability where possible."}},
+      {"@type":"Question","name":"What information should I have ready when I call?","acceptedAnswer":{"@type":"Answer","text":"A clear description of what's wrong (or photos, if you can send them), which Simi Valley neighborhood you're in, and whether it's urgent. The more specific you can be, the more accurate our estimate before we even arrive."}},
+      {"@type":"Question","name":"Can I get same-day service?","acceptedAnswer":{"@type":"Answer","text":"Yes, based on same-day availability — call (805) 555-0142 and we'll tell you honestly whether we can get there today, rather than promise something we can't deliver."}},
+      {"@type":"Question","name":"How much does a handyman cost in Simi Valley, CA?","acceptedAnswer":{"@type":"Answer","text":"It depends on the job — small fixture swaps and flat-rate jobs cost less than multi-hour repairs billed hourly. See our full pricing guide for a real breakdown by job type."}},
+      {"@type":"Question","name":"Do you charge a flat rate or an hourly rate?","acceptedAnswer":{"@type":"Answer","text":"Both, depending on the job. Small, predictable jobs (a single fixture install, a TV mount) are often flat-rate. Larger or less predictable jobs are billed hourly with a stated minimum."}},
+      {"@type":"Question","name":"Is there a minimum job charge?","acceptedAnswer":{"@type":"Answer","text":"Yes — [state your minimum]. This covers the cost of scheduling and traveling to the job regardless of size, which is standard across the trade."}},
+      {"@type":"Question","name":"What payment methods do you accept?","acceptedAnswer":{"@type":"Answer","text":"[List: cash, check, card, Venmo/Zelle, etc.]"}},
+      {"@type":"Question","name":"Why do handyman quotes vary so much between companies?","acceptedAnswer":{"@type":"Answer","text":"Price differences usually come down to insurance coverage, materials markup, experience, and whether the quote is honest about the full scope upfront. An unusually low quote can be a sign of missing insurance or hidden add-ons once the job starts — see our pricing page for more on this."}},
+      {"@type":"Question","name":"Do you charge extra for emergency or same-day service?","acceptedAnswer":{"@type":"Answer","text":"[State your actual policy — many handyman businesses do charge a premium for true same-day/emergency work; state yours honestly.]"}},
+      {"@type":"Question","name":"Are you a licensed contractor?","acceptedAnswer":{"@type":"Answer","text":"We operate within California's unlicensed-handyman limit — $500 total per job, labor and materials combined. For anything above that scope, we'll tell you directly and point you toward a licensed contractor rather than take on work outside what's legal."}},
+      {"@type":"Question","name":"What's the difference between a handyman and a licensed contractor in California?","acceptedAnswer":{"@type":"Answer","text":"A handyman can legally take on any job where combined labor and materials total $500 or less. Above that dollar amount, or for structural, major electrical, or major plumbing work, California law requires a licensed contractor — the closest formal license for smaller remodeling-type work is the CSLB B2 Residential Remodeling license."}},
+      {"@type":"Question","name":"Are you insured?","acceptedAnswer":{"@type":"Answer","text":"[State your actual coverage once confirmed — general liability insurance, etc. Do not state coverage that doesn't exist.]"}},
+      {"@type":"Question","name":"How do I verify a handyman is legitimate before hiring them?","acceptedAnswer":{"@type":"Answer","text":"Ask directly whether they're staying within the $500 unlicensed-work cap or hold an actual contractor license, and don't be put off if they ask you the same clarifying questions about your job — a legitimate handyman should be upfront about scope, not vague about it. You can also verify any claimed contractor license directly through the California Contractors State License Board (CSLB)."}},
+      {"@type":"Question","name":"What happens if my job turns out to need a licensed contractor?","acceptedAnswer":{"@type":"Answer","text":"We'll tell you plainly rather than take on work outside legal scope. We'd rather refer you to the right person than risk doing a job we're not licensed to do."}},
+      {"@type":"Question","name":"What services do you offer?","acceptedAnswer":{"@type":"Answer","text":"Drywall repair, painting, plumbing fixture repairs, electrical fixtures and smart home installs, TV mounting and furniture assembly, fencing and pet doors, garage door repair, deck and patio repair, and general punch-list repairs. See our full services page for details on each."}},
+      {"@type":"Question","name":"Do you handle plumbing and electrical work?","acceptedAnswer":{"@type":"Answer","text":"Yes, within handyman scope — fixture-level plumbing (faucets, toilets, disposals, P-traps) and fixture-level electrical (light fixtures, switches, outlets, ceiling fans). New circuits, gas line work, sewer work, and anything beyond fixture-level repair legally needs a licensed plumber or electrician, and we'll tell you if that's what your job needs."}},
+      {"@type":"Question","name":"Can you help with small jobs, or only bigger projects?","acceptedAnswer":{"@type":"Answer","text":"Small jobs are most of what we do. A single ceiling fan or one drywall patch is a normal call for us, not a minimum-job hassle."}},
+      {"@type":"Question","name":"Do you bring your own tools and materials?","acceptedAnswer":{"@type":"Answer","text":"Yes. For jobs needing specific fixtures or finishes (a particular faucet model, matching paint), we'll confirm with you first or you're welcome to supply your own."}},
+      {"@type":"Question","name":"Is there anything a handyman legally cannot do in California?","acceptedAnswer":{"@type":"Answer","text":"Yes — structural work, new electrical circuits, gas line work, and any job where combined labor and materials exceed $500 all legally require a licensed contractor. We'll flag this before starting rather than take on work outside what's legal."}},
+      {"@type":"Question","name":"Should I hire a handyman or call a licensed plumber/electrician?","acceptedAnswer":{"@type":"Answer","text":"For fixture swaps, drain clogs, and simple repairs — a handyman is usually faster and cheaper. For anything involving new circuits, gas lines, sewer work, or a job likely to exceed $500 in labor and materials, it legally needs a licensed plumber, electrician, or contractor. If you're not sure which one your job needs, tell us what's going on and we'll give you a straight answer, even if that means referring you out."}},
+      {"@type":"Question","name":"Can I fix water damage myself, or should I call a professional?","acceptedAnswer":{"@type":"Answer","text":"Minor surface drying and a small drywall patch are within reach for a handy homeowner, but if the water damage is from an unresolved leak, involves a large area, or you suspect mold, that's worth a professional assessment first — patching over an active problem just means dealing with it twice."}},
+      {"@type":"Question","name":"What should I do if I notice a roof leak?","acceptedAnswer":{"@type":"Answer","text":"Contain what you can (a bucket, moving anything valuable out of the drip path) and address the roof itself with a roofer as soon as possible — a handyman can help with the resulting interior drywall repair once the leak source is fixed, but roof repair itself is outside handyman scope."}},
+      {"@type":"Question","name":"Is it safe to install a ceiling fan myself?","acceptedAnswer":{"@type":"Answer","text":"It depends on your comfort with electrical work and whether the existing electrical box is rated to support a fan's weight — a light fixture box often isn't. If you're not confident about that distinction, this is a quick, inexpensive job for a professional and one of our most requested services."}},
+      {"@type":"Question","name":"Do you serve all Simi Valley neighborhoods?","acceptedAnswer":{"@type":"Answer","text":"Yes — Wood Ranch, Central Simi Valley, East Simi Valley, Big Sky, and Santa Susana. See our neighborhoods section for area-specific detail."}},
+      {"@type":"Question","name":"Do you serve areas outside Simi Valley?","acceptedAnswer":{"@type":"Answer","text":"We also serve Moorpark, Thousand Oaks, and Chatsworth."}},
+      {"@type":"Question","name":"How should I prepare my Simi Valley home for wildfire season?","acceptedAnswer":{"@type":"Answer","text":"Clear gutters and roof debris, seal gaps around eaves and vents where embers can catch, and check that fence panels near the house are secure. Read our full wildfire prep checklist for more."}},
+      {"@type":"Question","name":"Why do faucets and fixtures wear out faster in Simi Valley homes?","acceptedAnswer":{"@type":"Answer","text":"Simi Valley's groundwater runs hard, and hard water accelerates wear on faucet cartridges, showerheads, and garbage disposal seals compared to areas with softer water."}},
+      {"@type":"Question","name":"Do you provide a warranty on your work?","acceptedAnswer":{"@type":"Answer","text":"Yes — [X days] on workmanship. If something we repaired fails within that window, we come back and make it right at no charge."}},
+      {"@type":"Question","name":"What happens if something you fixed breaks again?","acceptedAnswer":{"@type":"Answer","text":"Contact us and reference the original job. If it's within the warranty window and related to our original work, we'll come back and fix it at no charge."}}
+    ]
+  }
+  </script>
 </body>
 </html>

@@ -6,7 +6,7 @@
   <title>General Repairs & Punch List Handyman | Simi Valley, CA</title>
   <meta name="description" content="Got a growing to-do list of small home repairs in Simi Valley? We handle the whole punch list in one visit — upfront pricing, no job too small.">
   <link rel="canonical" href="https://simivalleyhandymanco.com/services/general-repairs-punch-list/">
-  <script src="https://unpkg.com/lucide@latest"></script>
+  <script defer src="https://unpkg.com/lucide@latest"></script>
   <link rel="stylesheet" href="/assets/css/site.css">
 
   <link rel="icon" type="image/webp" href="/assets/image/simi-valley-handyman-co-logo.webp">
@@ -99,7 +99,7 @@
         alt="General Repairs &amp; Punch List in Simi Valley, CA"
         title="General Repairs &amp; Punch List"
         class="hero-leander__bg"
-        loading="eager"
+        fetchpriority="high" loading="eager"
         decoding="async"
       >
       <div class="hero-leander__overlay" aria-hidden="true"></div>
@@ -455,7 +455,9 @@
 
   <script type="module" src="/assets/js/main.js"></script>
   <script>
-    lucide.createIcons();
+    document.addEventListener("DOMContentLoaded", function() {
+      lucide.createIcons();
+    });
   </script>
 
   <script type="application/ld+json">

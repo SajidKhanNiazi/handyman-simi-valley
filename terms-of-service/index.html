@@ -6,7 +6,7 @@
   <title>Terms of Service | Simi Valley Handyman Co.</title>
   <meta name="description" content="Terms of service and use for the Simi Valley Handyman Co. website.">
   <link rel="canonical" href="https://simivalleyhandymanco.com/terms-of-service/">
-  <script src="https://unpkg.com/lucide@latest"></script>
+  <script defer src="https://unpkg.com/lucide@latest"></script>
   <link rel="stylesheet" href="/assets/css/site.css">
 
   <link rel="icon" type="image/webp" href="/assets/image/simi-valley-handyman-co-logo.webp">
@@ -198,7 +198,9 @@
 
   <script type="module" src="/assets/js/main.js"></script>
   <script>
-    lucide.createIcons();
+    document.addEventListener("DOMContentLoaded", function() {
+      lucide.createIcons();
+    });
   </script>
 
   <script type="application/ld+json">

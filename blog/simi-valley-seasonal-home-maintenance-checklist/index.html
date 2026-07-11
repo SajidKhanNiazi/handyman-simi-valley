@@ -6,7 +6,7 @@
   <title>Simi Valley Seasonal Home Maintenance Checklist 2026</title>
   <meta name="description" content="A season-by-season home maintenance checklist built for Simi Valley's actual climate — wet season, dry season, wind season, and year-round basics.">
   <link rel="canonical" href="https://simivalleyhandymanco.com/blog/simi-valley-seasonal-home-maintenance-checklist/">
-  <script src="https://unpkg.com/lucide@latest"></script>
+  <script defer src="https://unpkg.com/lucide@latest"></script>
   <link rel="stylesheet" href="/assets/css/site.css">
   <link rel="icon" type="image/webp" href="/assets/image/simi-valley-handyman-co-logo.webp">
 </head>
@@ -289,7 +289,9 @@
 
   <script type="module" src="/assets/js/main.js"></script>
   <script>
-    lucide.createIcons();
+    document.addEventListener("DOMContentLoaded", function() {
+      lucide.createIcons();
+    });
   </script>
 
   <script type="application/ld+json">

@@ -6,7 +6,7 @@
   <title>Privacy Policy | Simi Valley Handyman Co.</title>
   <meta name="description" content="Privacy policy for Simi Valley Handyman Co. outlining how we collect, use, and protect your data.">
   <link rel="canonical" href="https://simivalleyhandymanco.com/privacy-policy/">
-  <script src="https://unpkg.com/lucide@latest"></script>
+  <script defer src="https://unpkg.com/lucide@latest"></script>
   <link rel="stylesheet" href="/assets/css/site.css">
 
   <link rel="icon" type="image/webp" href="/assets/image/simi-valley-handyman-co-logo.webp">
@@ -198,7 +198,9 @@
 
   <script type="module" src="/assets/js/main.js"></script>
   <script>
-    lucide.createIcons();
+    document.addEventListener("DOMContentLoaded", function() {
+      lucide.createIcons();
+    });
   </script>
 
   <script type="application/ld+json">

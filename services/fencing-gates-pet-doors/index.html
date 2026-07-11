@@ -6,7 +6,7 @@
   <title>Fencing, Gates & Pet Door Install in Simi Valley, CA | Simi Valley Handyman Co.</title>
   <meta name="description" content="Fence repair, gate hardware, and pet door installation in Simi Valley, CA — including cat-proof fencing and dog doors in slider doors. Free estimate.">
   <link rel="canonical" href="https://simivalleyhandymanco.com/services/fencing-gates-pet-doors/">
-  <script src="https://unpkg.com/lucide@latest"></script>
+  <script defer src="https://unpkg.com/lucide@latest"></script>
   <link rel="stylesheet" href="/assets/css/site.css">
   <link rel="icon" type="image/webp" href="/assets/image/simi-valley-handyman-co-logo.webp">
 </head>
@@ -98,7 +98,7 @@
         alt="Fencing, Gates & Pet Door Install in Simi Valley, CA"
         title="Fencing, Gates & Pet Door Install"
         class="hero-leander__bg"
-        loading="eager"
+        fetchpriority="high" loading="eager"
         decoding="async"
       >
       <div class="hero-leander__overlay" aria-hidden="true"></div>
@@ -425,7 +425,9 @@
 
   <script type="module" src="/assets/js/main.js"></script>
   <script>
-    lucide.createIcons();
+    document.addEventListener("DOMContentLoaded", function() {
+      lucide.createIcons();
+    });
   </script>
 
   <script type="application/ld+json">

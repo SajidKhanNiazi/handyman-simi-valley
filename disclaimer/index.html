@@ -6,7 +6,7 @@
   <title>Disclaimer & Licensing | Simi Valley Handyman Co.</title>
   <meta name="description" content="Important disclaimers and licensing scope information for Simi Valley Handyman Co.">
   <link rel="canonical" href="https://simivalleyhandymanco.com/disclaimer/">
-  <script src="https://unpkg.com/lucide@latest"></script>
+  <script defer src="https://unpkg.com/lucide@latest"></script>
   <link rel="stylesheet" href="/assets/css/site.css">
 
   <link rel="icon" type="image/webp" href="/assets/image/simi-valley-handyman-co-logo.webp">
@@ -187,7 +187,9 @@
 
   <script type="module" src="/assets/js/main.js"></script>
   <script>
-    lucide.createIcons();
+    document.addEventListener("DOMContentLoaded", function() {
+      lucide.createIcons();
+    });
   </script>
 
   <script type="application/ld+json">

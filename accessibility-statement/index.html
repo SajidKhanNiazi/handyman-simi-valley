@@ -6,7 +6,7 @@
   <title>Accessibility Statement | Simi Valley Handyman Co.</title>
   <meta name="description" content="Our commitment to web accessibility and providing an inclusive experience for all visitors.">
   <link rel="canonical" href="https://simivalleyhandymanco.com/accessibility-statement/">
-  <script src="https://unpkg.com/lucide@latest"></script>
+  <script defer src="https://unpkg.com/lucide@latest"></script>
   <link rel="stylesheet" href="/assets/css/site.css">
 
   <link rel="icon" type="image/webp" href="/assets/image/simi-valley-handyman-co-logo.webp">
@@ -184,7 +184,9 @@
 
   <script type="module" src="/assets/js/main.js"></script>
   <script>
-    lucide.createIcons();
+    document.addEventListener("DOMContentLoaded", function() {
+      lucide.createIcons();
+    });
   </script>
 
   <script type="application/ld+json">

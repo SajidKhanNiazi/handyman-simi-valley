@@ -6,7 +6,7 @@
   <title>Deck & Patio Repair in Simi Valley, CA | Simi Valley Handyman Co.</title>
   <meta name="description" content="Deck board replacement, railing repair, and patio maintenance in Simi Valley, CA. Keep your outdoor space safe and solid. Free estimate.">
   <link rel="canonical" href="https://simivalleyhandymanco.com/services/deck-patio-repair/">
-  <script src="https://unpkg.com/lucide@latest"></script>
+  <script defer src="https://unpkg.com/lucide@latest"></script>
   <link rel="stylesheet" href="/assets/css/site.css">
   <link rel="icon" type="image/webp" href="/assets/image/simi-valley-handyman-co-logo.webp">
 </head>
@@ -98,7 +98,7 @@
         alt="Deck & Patio Repair in Simi Valley, CA"
         title="Deck & Patio Repair"
         class="hero-leander__bg"
-        loading="eager"
+        fetchpriority="high" loading="eager"
         decoding="async"
       >
       <div class="hero-leander__overlay" aria-hidden="true"></div>
@@ -444,7 +444,9 @@
 
   <script type="module" src="/assets/js/main.js"></script>
   <script>
-    lucide.createIcons();
+    document.addEventListener("DOMContentLoaded", function() {
+      lucide.createIcons();
+    });
   </script>
 
   <script type="application/ld+json">

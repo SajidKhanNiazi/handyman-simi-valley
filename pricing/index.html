@@ -6,7 +6,7 @@
   <title>Handyman Cost Simi Valley, CA | Affordable Pricing & Hourly Rates</title>
   <meta name="description" content="View affordable handyman pricing in Simi Valley, CA. See hourly rates, common repair costs, furniture assembly, TV mounting, drywall repair, and more.">
   <link rel="canonical" href="https://simivalleyhandymanco.com/pricing/">
-  <script src="https://unpkg.com/lucide@latest"></script>
+  <script defer src="https://unpkg.com/lucide@latest"></script>
   <link rel="stylesheet" href="/assets/css/site.css">
 
   <link rel="icon" type="image/webp" href="/assets/image/simi-valley-handyman-co-logo.webp">
@@ -96,7 +96,7 @@
         src="/assets/image/general-repairs-hero.png" 
         alt="Handyman pricing and estimates"
         class="hero-leander__bg"
-        loading="eager"
+        fetchpriority="high" loading="eager"
         decoding="async"
       >
       <div class="hero-leander__overlay" aria-hidden="true"></div>
@@ -398,7 +398,9 @@
 
   <script type="module" src="/assets/js/main.js"></script>
   <script>
-    lucide.createIcons();
+    document.addEventListener("DOMContentLoaded", function() {
+      lucide.createIcons();
+    });
   </script>
 
   <script type="application/ld+json">

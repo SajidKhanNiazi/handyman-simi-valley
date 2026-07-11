@@ -6,7 +6,7 @@
   <title>Santa Ana Wind Season Home Prep in Simi Valley, CA</title>
   <meta name="description" content="Get your Simi Valley home ready for Santa Ana wind season — securing your property and preparing for possible SCE power shutoffs (PSPS).">
   <link rel="canonical" href="https://simivalleyhandymanco.com/blog/santa-ana-wind-home-prep-simi-valley/">
-  <script src="https://unpkg.com/lucide@latest"></script>
+  <script defer src="https://unpkg.com/lucide@latest"></script>
   <link rel="stylesheet" href="/assets/css/site.css">
   <link rel="icon" type="image/webp" href="/assets/image/simi-valley-handyman-co-logo.webp">
 </head>
@@ -275,7 +275,9 @@
 
   <script type="module" src="/assets/js/main.js"></script>
   <script>
-    lucide.createIcons();
+    document.addEventListener("DOMContentLoaded", function() {
+      lucide.createIcons();
+    });
   </script>
 
   <script type="application/ld+json">

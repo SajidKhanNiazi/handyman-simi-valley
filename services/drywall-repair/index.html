@@ -6,7 +6,7 @@
   <title>Drywall Repair in Simi Valley, CA | Texture-Matched</title>
   <meta name="description" content="Drywall repair in Simi Valley, CA — nail pops, water stains, holes, and texture-matched patches (orange peel & knockdown). Upfront pricing, fast turnaround.">
   <link rel="canonical" href="https://simivalleyhandymanco.com/services/drywall-repair/">
-  <script src="https://unpkg.com/lucide@latest"></script>
+  <script defer src="https://unpkg.com/lucide@latest"></script>
   <link rel="stylesheet" href="/assets/css/site.css">
 
   <link rel="icon" type="image/webp" href="/assets/image/simi-valley-handyman-co-logo.webp">
@@ -99,7 +99,7 @@
         alt="Drywall Repair in Simi Valley, CA"
         title="Drywall Repair"
         class="hero-leander__bg"
-        loading="eager"
+        fetchpriority="high" loading="eager"
         decoding="async"
       >
       <div class="hero-leander__overlay" aria-hidden="true"></div>
@@ -438,7 +438,9 @@
 
   <script type="module" src="/assets/js/main.js"></script>
   <script>
-    lucide.createIcons();
+    document.addEventListener("DOMContentLoaded", function() {
+      lucide.createIcons();
+    });
   </script>
 
   <script type="application/ld+json">

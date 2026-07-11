@@ -8,7 +8,7 @@
   <meta name="description"
     content="Reliable handyman in Simi Valley, CA for drywall, plumbing & electrical repairs. Same-day service, honest pricing, no surprise invoices. Call today.">
   <link rel="canonical" href="https://simivalleyhandymanco.com/">
-  <script src="https://unpkg.com/lucide@latest"></script>
+  <script defer src="https://unpkg.com/lucide@latest"></script>
   <link rel="stylesheet" href="./assets/css/site.css">
 
   <link rel="icon" type="image/webp" href="/assets/image/simi-valley-handyman-co-logo.webp">
@@ -121,7 +121,7 @@
   <main id="main-content">
     <!-- Hero: Leander-style full-width image + dark overlay -->
     <section class="hero-leander">
-      <img src="/assets/image/handyman-technician-hero.webp" alt="Handyman technician working on a home repair in Simi Valley, CA" title="Handyman technician working on a home repair in Simi Valley, CA" class="hero-leander__bg" loading="eager" decoding="async">
+      <img src="/assets/image/handyman-technician-hero.webp" alt="Handyman technician working on a home repair in Simi Valley, CA" title="Handyman technician working on a home repair in Simi Valley, CA" class="hero-leander__bg" fetchpriority="high" loading="eager" decoding="async">
       <div class="hero-leander__overlay" aria-hidden="true"></div>
       <div class="hero-leander__content">
         <p class="mb-8 md:mb-10 text-[11px] md:text-xs font-bold uppercase tracking-widest text-brand" aria-hidden="false">SAME-DAY HANDYMAN SERVICE · SIMI VALLEY, CA · 93063 &amp; 93065</p>
@@ -732,7 +732,9 @@
 
   <script type="module" src="/assets/js/main.js"></script>
   <script>
-    lucide.createIcons();
+    document.addEventListener("DOMContentLoaded", function() {
+      lucide.createIcons();
+    });
   </script>
 
   <script type="application/ld+json">

@@ -6,7 +6,7 @@
   <title>Simi Valley Handyman Blog | Home Maintenance Tips</title>
   <meta name="description" content="Practical home maintenance tips, seasonal checklists, and advice specifically for Simi Valley, CA homeowners.">
   <link rel="canonical" href="https://simivalleyhandymanco.com/blog/">
-  <script src="https://unpkg.com/lucide@latest"></script>
+  <script defer src="https://unpkg.com/lucide@latest"></script>
   <link rel="stylesheet" href="/assets/css/site.css">
   <link rel="icon" type="image/webp" href="/assets/image/simi-valley-handyman-co-logo.webp">
 </head>
@@ -243,7 +243,9 @@
 
   <script type="module" src="/assets/js/main.js"></script>
   <script>
-    lucide.createIcons();
+    document.addEventListener("DOMContentLoaded", function() {
+      lucide.createIcons();
+    });
   </script>
 
   

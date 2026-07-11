@@ -6,7 +6,7 @@
   <title>Aging-in-Place Home Modifications in Simi Valley, CA</title>
   <meta name="description" content="Grab bars, fall-hazard fixes, and simple accessibility upgrades in Simi Valley, CA — practical modifications so you can stay comfortable at home. Free estimate.">
   <link rel="canonical" href="https://simivalleyhandymanco.com/services/aging-in-place-modifications/">
-  <script src="https://unpkg.com/lucide@latest"></script>
+  <script defer src="https://unpkg.com/lucide@latest"></script>
   <link rel="stylesheet" href="/assets/css/site.css">
   <link rel="icon" type="image/webp" href="/assets/image/simi-valley-handyman-co-logo.webp">
 </head>
@@ -98,7 +98,7 @@
         alt="Aging-in-Place Modifications in Simi Valley, CA"
         title="Aging-in-Place Modifications"
         class="hero-leander__bg"
-        loading="eager"
+        fetchpriority="high" loading="eager"
         decoding="async"
       >
       <div class="hero-leander__overlay" aria-hidden="true"></div>
@@ -350,7 +350,9 @@
 
   <script type="module" src="/assets/js/main.js"></script>
   <script>
-    lucide.createIcons();
+    document.addEventListener("DOMContentLoaded", function() {
+      lucide.createIcons();
+    });
   </script>
 
   <script type="application/ld+json">

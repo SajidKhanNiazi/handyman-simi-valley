@@ -6,7 +6,7 @@
   <title>About Us | Simi Valley Handyman Co.</title>
   <meta name="description" content="Learn more about Simi Valley Handyman Co., your trusted local handyman for all home repair needs in Simi Valley, CA. Licensed-scope and upfront pricing.">
   <link rel="canonical" href="https://simivalleyhandymanco.com/about/">
-  <script src="https://unpkg.com/lucide@latest"></script>
+  <script defer src="https://unpkg.com/lucide@latest"></script>
   <link rel="stylesheet" href="/assets/css/site.css">
 
   <link rel="icon" type="image/webp" href="/assets/image/simi-valley-handyman-co-logo.webp">
@@ -96,7 +96,7 @@
         src="/assets/image/handyman in simi valley (1).webp" 
         alt="Handyman About Us"
         class="hero-leander__bg"
-        loading="eager"
+        fetchpriority="high" loading="eager"
         decoding="async"
       >
       <div class="hero-leander__overlay" aria-hidden="true"></div>
@@ -217,7 +217,9 @@
 
   <script type="module" src="/assets/js/main.js"></script>
   <script>
-    lucide.createIcons();
+    document.addEventListener("DOMContentLoaded", function() {
+      lucide.createIcons();
+    });
   </script>
 
   <script type="application/ld+json">

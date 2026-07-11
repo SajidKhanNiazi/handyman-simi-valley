@@ -6,7 +6,7 @@
   <title>Gutter Cleaning & Repair in Simi Valley, CA | Simi Valley Handyman Co.</title>
   <meta name="description" content="Gutter cleaning and repair in Simi Valley, CA — critical before wildfire and storm season. Clear debris, fix leaks, prevent water damage. Free estimate.">
   <link rel="canonical" href="https://simivalleyhandymanco.com/services/gutter-cleaning-repair/">
-  <script src="https://unpkg.com/lucide@latest"></script>
+  <script defer src="https://unpkg.com/lucide@latest"></script>
   <link rel="stylesheet" href="/assets/css/site.css">
   <link rel="icon" type="image/webp" href="/assets/image/simi-valley-handyman-co-logo.webp">
 </head>
@@ -98,7 +98,7 @@
         alt="Gutter Cleaning & Repair in Simi Valley, CA"
         title="Gutter Cleaning & Repair"
         class="hero-leander__bg"
-        loading="eager"
+        fetchpriority="high" loading="eager"
         decoding="async"
       >
       <div class="hero-leander__overlay" aria-hidden="true"></div>
@@ -433,7 +433,9 @@
 
   <script type="module" src="/assets/js/main.js"></script>
   <script>
-    lucide.createIcons();
+    document.addEventListener("DOMContentLoaded", function() {
+      lucide.createIcons();
+    });
   </script>
 
   <script type="application/ld+json">

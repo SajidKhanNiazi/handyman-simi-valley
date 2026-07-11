@@ -6,7 +6,7 @@
   <title>Contact Us | Simi Valley Handyman Co.</title>
   <meta name="description" content="Contact Simi Valley Handyman Co. for a free estimate on your home repairs. Call or text (805) 555-0142. Serving Simi Valley, Wood Ranch, Moorpark & more.">
   <link rel="canonical" href="https://simivalleyhandymanco.com/contact/">
-  <script src="https://unpkg.com/lucide@latest"></script>
+  <script defer src="https://unpkg.com/lucide@latest"></script>
   <link rel="stylesheet" href="/assets/css/site.css">
 
   <link rel="icon" type="image/webp" href="/assets/image/simi-valley-handyman-co-logo.webp">
@@ -92,7 +92,7 @@
 
   <main id="main-content">
     <section class="hero-leander" style="min-height: 40vh;">
-      <img src="/assets/image/drywall-patch-repaint-central-simi-valley.webp" alt="Drywall patch and repaint after a pipe leak in a Central Simi Valley home" title="Drywall patch and repaint after a pipe leak in a Central Simi Valley home" class="hero-leander__bg" loading="eager" decoding="async" >
+      <img src="/assets/image/drywall-patch-repaint-central-simi-valley.webp" alt="Drywall patch and repaint after a pipe leak in a Central Simi Valley home" title="Drywall patch and repaint after a pipe leak in a Central Simi Valley home" class="hero-leander__bg" fetchpriority="high" loading="eager" decoding="async" >
       <div class="hero-leander__overlay" aria-hidden="true"></div>
       <div class="hero-leander__content">
         <nav class="mb-4 text-xs font-semibold uppercase tracking-wider text-slate-300 flex items-center justify-center gap-2" aria-label="Breadcrumb">
@@ -214,7 +214,9 @@
 
   <script type="module" src="/assets/js/main.js"></script>
   <script>
-    lucide.createIcons();
+    document.addEventListener("DOMContentLoaded", function() {
+      lucide.createIcons();
+    });
   </script>
 
   <script type="application/ld+json">

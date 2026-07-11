@@ -21,7 +21,7 @@ walkDir(__dirname, (filePath) => {
   let originalContent = content;
 
   // Replace canonical links, schema URLs, etc.
-  content = content.replace(/www\.example\.com/g, 'www.simivalleyhandymanco.com');
+  content = content.replace(/www\.example\.com/g, 'simivalleyhandymanco.com');
   
   // Replace email addresses or any other bare simivalleyhandymanco.com references
   content = content.replace(/example\.com/g, 'simivalleyhandymanco.com');

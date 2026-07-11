@@ -1,0 +1,17 @@
+{
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.simivalleyhandymanco.com"
+        }
+      ],
+      "destination": "https://simivalleyhandymanco.com/$1",
+      "permanent": true
+    }
+  ],
+  "cleanUrls": true,
+  "trailingSlash": true
+}

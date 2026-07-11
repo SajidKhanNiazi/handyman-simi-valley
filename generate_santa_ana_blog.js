@@ -17,7 +17,7 @@ const footer = sourceHTML.substring(footerStartIdx);
 let newHeader = header
   .replace(/<title>.*?<\/title>/, '<title>Santa Ana Wind Season Home Prep in Simi Valley, CA</title>')
   .replace(/<meta name="description" content=".*?">/, '<meta name="description" content="Get your Simi Valley home ready for Santa Ana wind season — securing your property and preparing for possible SCE power shutoffs (PSPS).">')
-  .replace(/<link rel="canonical" href=".*?">/, '<link rel="canonical" href="https://www.simivalleyhandymanco.com/blog/santa-ana-wind-home-prep-simi-valley/">');
+  .replace(/<link rel="canonical" href=".*?">/, '<link rel="canonical" href="https://simivalleyhandymanco.com/blog/santa-ana-wind-home-prep-simi-valley/">');
 
 const blogContent = `
     <!-- Article Header -->
@@ -180,7 +180,7 @@ finalHTML = finalHTML.replace(/<script type="application\/ld\+json">[\s\S]*?<\/s
     "name": "Simi Valley Handyman Co.",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://www.simivalleyhandymanco.com/assets/image/handyman%20simi%20valley%20logo.webp"
+      "url": "https://simivalleyhandymanco.com/assets/image/handyman%20simi%20valley%20logo.webp"
     }
   }
 }

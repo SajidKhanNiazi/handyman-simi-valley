@@ -17,7 +17,7 @@ const footer = sourceHTML.substring(footerStartIdx);
 let newHeader = header
   .replace(/<title>.*?<\/title>/, '<title>Wildfire Home Hardening in Simi Valley, CA | Checklist</title>')
   .replace(/<meta name="description" content=".*?">/, '<meta name="description" content="Practical wildfire prep for Simi Valley homeowners — gutters, vents, decks, and defensible space, before Santa Ana wind season hits. Free checklist.">')
-  .replace(/<link rel="canonical" href=".*?">/, '<link rel="canonical" href="https://www.simivalleyhandymanco.com/blog/wildfire-home-hardening-simi-valley/">');
+  .replace(/<link rel="canonical" href=".*?">/, '<link rel="canonical" href="https://simivalleyhandymanco.com/blog/wildfire-home-hardening-simi-valley/">');
 
 const blogContent = `
     <!-- Article Header -->
@@ -244,7 +244,7 @@ finalHTML = finalHTML.replace(/<script type="application\/ld\+json">[\s\S]*?<\/s
     "name": "Simi Valley Handyman Co.",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://www.simivalleyhandymanco.com/assets/image/handyman%20simi%20valley%20logo.webp"
+      "url": "https://simivalleyhandymanco.com/assets/image/handyman%20simi%20valley%20logo.webp"
     }
   }
 }

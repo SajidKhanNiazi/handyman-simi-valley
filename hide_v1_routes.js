@@ -105,14 +105,14 @@ const sitemapPath = path.join(__dirname, 'sitemap.xml');
 if (fs.existsSync(sitemapPath)) {
   let sitemap = fs.readFileSync(sitemapPath, 'utf8');
   const urlsToRemove = [
-    '<url><loc>https://www.simivalleyhandymanco.com/locations/simi-valley/</loc></url>',
-    '<url><loc>https://www.simivalleyhandymanco.com/locations/simi-valley/wood-ranch/</loc></url>',
-    '<url><loc>https://www.simivalleyhandymanco.com/locations/simi-valley/central-simi-valley/</loc></url>',
-    '<url><loc>https://www.simivalleyhandymanco.com/locations/simi-valley/east-simi-valley/</loc></url>',
-    '<url><loc>https://www.simivalleyhandymanco.com/locations/simi-valley/big-sky/</loc></url>',
-    '<url><loc>https://www.simivalleyhandymanco.com/locations/simi-valley/santa-susana/</loc></url>',
-    '<url><loc>https://www.simivalleyhandymanco.com/reviews/</loc></url>',
-    '<url><loc>https://www.simivalleyhandymanco.com/gallery/</loc></url>'
+    '<url><loc>https://simivalleyhandymanco.com/locations/simi-valley/</loc></url>',
+    '<url><loc>https://simivalleyhandymanco.com/locations/simi-valley/wood-ranch/</loc></url>',
+    '<url><loc>https://simivalleyhandymanco.com/locations/simi-valley/central-simi-valley/</loc></url>',
+    '<url><loc>https://simivalleyhandymanco.com/locations/simi-valley/east-simi-valley/</loc></url>',
+    '<url><loc>https://simivalleyhandymanco.com/locations/simi-valley/big-sky/</loc></url>',
+    '<url><loc>https://simivalleyhandymanco.com/locations/simi-valley/santa-susana/</loc></url>',
+    '<url><loc>https://simivalleyhandymanco.com/reviews/</loc></url>',
+    '<url><loc>https://simivalleyhandymanco.com/gallery/</loc></url>'
   ];
   
   urlsToRemove.forEach(url => {

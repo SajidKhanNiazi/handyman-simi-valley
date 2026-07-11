@@ -680,7 +680,7 @@ function buildPageHtml(data) {
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>${data.metaTitle}</title>
   <meta name="description" content="${data.metaDescription}">
-  <link rel="canonical" href="https://www.simivalleyhandymanco.com/services/${data.slug}/">
+  <link rel="canonical" href="https://simivalleyhandymanco.com/services/${data.slug}/">
   <script src="https://unpkg.com/lucide@latest"></script>
   <link rel="stylesheet" href="/assets/css/site.css">
   <link rel="icon" type="image/webp" href="/assets/image/handyman simi valley logo.webp">

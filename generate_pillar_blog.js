@@ -17,7 +17,7 @@ const footer = sourceHTML.substring(footerStartIdx);
 let newHeader = header
   .replace(/<title>.*?<\/title>/, '<title>Simi Valley Seasonal Home Maintenance Checklist 2026</title>')
   .replace(/<meta name="description" content=".*?">/, '<meta name="description" content="A season-by-season home maintenance checklist built for Simi Valley\'s actual climate — wet season, dry season, wind season, and year-round basics.">')
-  .replace(/<link rel="canonical" href=".*?">/, '<link rel="canonical" href="https://www.simivalleyhandymanco.com/blog/simi-valley-seasonal-home-maintenance-checklist/">');
+  .replace(/<link rel="canonical" href=".*?">/, '<link rel="canonical" href="https://simivalleyhandymanco.com/blog/simi-valley-seasonal-home-maintenance-checklist/">');
 
 const blogContent = `
     <!-- Article Header -->
@@ -194,7 +194,7 @@ finalHTML = finalHTML.replace(/<script type="application\/ld\+json">[\s\S]*?<\/s
     "name": "Simi Valley Handyman Co.",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://www.simivalleyhandymanco.com/assets/image/handyman%20simi%20valley%20logo.webp"
+      "url": "https://simivalleyhandymanco.com/assets/image/handyman%20simi%20valley%20logo.webp"
     }
   }
 }

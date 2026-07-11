@@ -17,7 +17,7 @@ const footer = sourceHTML.substring(footerStartIdx);
 let newHeader = header
   .replace(/<title>.*?<\/title>/, '<title>Simi Valley Handyman Blog | Home Maintenance Tips</title>')
   .replace(/<meta name="description" content=".*?">/, '<meta name="description" content="Practical home maintenance tips, seasonal checklists, and advice specifically for Simi Valley, CA homeowners.">')
-  .replace(/<link rel="canonical" href=".*?">/, '<link rel="canonical" href="https://www.simivalleyhandymanco.com/blog/">');
+  .replace(/<link rel="canonical" href=".*?">/, '<link rel="canonical" href="https://simivalleyhandymanco.com/blog/">');
 
 const blogContent = `
     <section class="bg-slate-50 border-b border-slate-200/60 py-16">
@@ -106,7 +106,7 @@ finalHTML = finalHTML.replace('</body>', `<script type="application/ld+json">
   "@context": "https://schema.org",
   "@type": "Blog",
   "name": "Simi Valley Handyman Blog",
-  "url": "https://www.simivalleyhandymanco.com/blog/",
+  "url": "https://simivalleyhandymanco.com/blog/",
   "description": "Practical advice, seasonal checklists, and home repair guides specifically tailored for Simi Valley's climate and housing.",
   "publisher": {
     "@type": "Organization",

@@ -82,8 +82,8 @@ for (const filePath of allHtmls) {
 
   // 3. Placeholders replacement
   content = content.replace(/\[Last Updated Date\]/g, 'July 10, 2026');
-  content = content.replace(/\[Business Contact Email for Privacy Requests\]/g, 'info@example.com');
-  content = content.replace(/\[Business Contact Email\]/g, 'info@example.com');
+  content = content.replace(/\[Business Contact Email for Privacy Requests\]/g, 'info@simivalleyhandymanco.com');
+  content = content.replace(/\[Business Contact Email\]/g, 'info@simivalleyhandymanco.com');
   content = content.replace(/\[Business Name\]/g, 'Simi Valley Handyman Co.');
   content = content.replace(/\[List of third-party tools actually in use\]/g, 'Google Analytics and Vercel hosting');
   

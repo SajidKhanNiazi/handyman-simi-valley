@@ -680,7 +680,7 @@ function buildPageHtml(data) {
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>${data.metaTitle}</title>
   <meta name="description" content="${data.metaDescription}">
-  <link rel="canonical" href="https://www.example.com/services/${data.slug}/">
+  <link rel="canonical" href="https://www.simivalleyhandymanco.com/services/${data.slug}/">
   <script src="https://unpkg.com/lucide@latest"></script>
   <link rel="stylesheet" href="/assets/css/site.css">
   <link rel="icon" type="image/webp" href="/assets/image/handyman simi valley logo.webp">
@@ -965,7 +965,7 @@ function buildPageHtml(data) {
         <h2 class="text-sm font-bold uppercase tracking-wide text-brand">Contact</h2>
         <ul class="mt-3 space-y-2 text-sm">
           <li><a href="tel:8055550142" class="text-lg font-bold text-white hover:text-brand">(805) 555-0142</a></li>
-          <li><a href="mailto:info@example.com" class="hover:text-brand">info@example.com</a></li>
+          <li><a href="mailto:info@simivalleyhandymanco.com" class="hover:text-brand">info@simivalleyhandymanco.com</a></li>
           <li>123 Main St, Simi Valley, CA 93065</li>
           <li>Hours: Mon–Sat, 8:00 AM – 6:00 PM</li>
         </ul>

@@ -1,104 +1,25 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Wildfire Home Hardening in Simi Valley, CA | Checklist</title>
-  <meta name="description" content="Practical wildfire prep for Simi Valley homeowners — gutters, vents, decks, and defensible space, before Santa Ana wind season hits. Free checklist.">
-  <link rel="canonical" href="https://www.simivalleyhandymanco.com/blog/wildfire-home-hardening-simi-valley/">
-  <script src="https://unpkg.com/lucide@latest"></script>
-  <link rel="stylesheet" href="/assets/css/site.css">
-  <link rel="icon" type="image/webp" href="/assets/image/handyman simi valley logo.webp">
-</head>
-<body class="bg-white text-slate-900">
-  <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:left-2 focus:top-2 focus:z-50 focus:rounded focus:bg-white focus:px-3 focus:py-2 focus:text-sm focus:shadow">Skip to main content</a>
+const fs = require('fs');
+const path = require('path');
 
-  <header class="z-40 shadow-xl bg-ink relative">
-    <div class="bg-slate-900 border-b border-white/10 text-slate-300">
-      <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-2 text-sm">
-        <div class="flex items-center gap-4">
-          <a href="tel:8055550142" class="font-medium hover:text-brand flex items-center gap-1"><i data-lucide="phone" class="h-4 w-4"></i> Call or Text: (805) 555-0142</a>
-          <span class="hidden text-slate-600 sm:inline">|</span>
-          <nav aria-label="Utility links" class="hidden sm:block">
-            <ul class="flex items-center gap-4">
-              <li><a href="/about/" class="hover:text-brand transition-colors">About</a></li>
-              <li><a href="/contact/" class="hover:text-brand transition-colors">Contact</a></li>
-            </ul>
-          </nav>
-        </div>
-        <div class="flex items-center gap-4">
-          <a href="tel:8055550142" class="btn-primary hidden px-4 py-1.5 text-sm sm:inline-flex items-center gap-2"><i data-lucide="phone" class="h-4 w-4"></i> Call Now</a>
-        </div>
-      </div>
-    </div>
+const sourcePath = path.join(__dirname, 'services/gutter-cleaning-repair/index.html');
+const destPath = path.join(__dirname, 'blog/wildfire-home-hardening-simi-valley/index.html');
 
-    <div class="bg-ink">
-      <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-3">
-        <a href="/" class="inline-flex items-center gap-3">
-          <img
-            src="/assets/image/handyman simi valley logo.webp"
-            alt="Handyman Simi Valley logo"
-            title="Handyman Simi Valley"
-            class="h-16 md:h-20 w-[220px] md:w-[320px] object-contain scale-110 md:scale-125 origin-left"
-            loading="eager"
-            decoding="async"
-          >
-        </a>
+const sourceHTML = fs.readFileSync(sourcePath, 'utf8');
 
-        <button id="menu-toggle" type="button" class="inline-flex rounded border border-white/20 text-white px-3 py-2 md:hidden hover:bg-white/10" aria-expanded="false" aria-controls="mobile-menu">
-          <span class="sr-only">Open menu</span>
-          <i data-lucide="menu" class="h-6 w-6"></i>
-        </button>
+// Extract header and footer
+const headerEndIdx = sourceHTML.indexOf('<main id="main-content">') + '<main id="main-content">'.length;
+const footerStartIdx = sourceHTML.indexOf('<footer class="bg-ink pb-24 text-slate-300 md:pb-8">');
 
-        <nav class="hidden items-center gap-6 md:flex" aria-label="Main navigation">
-          <a href="/" class="font-medium text-brand">Home</a>
+const header = sourceHTML.substring(0, headerEndIdx);
+const footer = sourceHTML.substring(footerStartIdx);
 
-          <div class="group relative">
-            <button type="button" class="inline-flex items-center gap-1 font-medium text-white hover:text-brand transition-colors">Services <span aria-hidden="true" class="text-xs">▾</span></button>
-            <ul class="nav-dropdown absolute left-0 top-full z-50 mt-2 w-80 rounded-xl border border-slate-200 bg-white p-2 shadow-lg text-slate-900">
-              <li><a class="block rounded px-3 py-2 hover:bg-slate-50" href="/services/">All Handyman Services</a></li>
-              <li><a class="block rounded px-3 py-2 hover:bg-slate-50" href="/services/general-repairs-punch-list/">General Repairs &amp; Punch List</a></li>
-              <li><a class="block rounded px-3 py-2 hover:bg-slate-50" href="/services/drywall-repair/">Drywall Repair</a></li>
-              <li><a class="block rounded px-3 py-2 hover:bg-slate-50" href="/services/painting-interior-exterior/">Painting Interior &amp; Exterior</a></li>
-              <li><a class="block rounded px-3 py-2 hover:bg-slate-50" href="/services/plumbing-fixture-repair/">Plumbing Fixture Repair</a></li>
-              <li><a class="block rounded px-3 py-2 hover:bg-slate-50" href="/services/electrical-fixture-install/">Electrical Fixture Install</a></li>
-              <li><a class="block rounded px-3 py-2 hover:bg-slate-50" href="/services/smart-home-device-install/">Smart Home Device Install</a></li>
-              <li><a class="block rounded px-3 py-2 hover:bg-slate-50" href="/services/tv-mounting-furniture-assembly/">TV Mounting &amp; Furniture Assembly</a></li>
-              <li><a class="block rounded px-3 py-2 hover:bg-slate-50" href="/services/fencing-gates-pet-doors/">Fencing, Gates &amp; Pet Doors</a></li>
-              <li><a class="block rounded px-3 py-2 hover:bg-slate-50" href="/services/garage-door-repair/">Garage Door Repair</a></li>
-              <li><a class="block rounded px-3 py-2 hover:bg-slate-50" href="/services/deck-patio-repair/">Deck &amp; Patio Repair</a></li>
-              <li><a class="block rounded px-3 py-2 hover:bg-slate-50" href="/services/gutter-cleaning-repair/">Gutter Cleaning &amp; Repair</a></li>
-              <li><a class="block rounded px-3 py-2 hover:bg-slate-50" href="/services/sprinkler-irrigation-repair/">Sprinkler &amp; Irrigation Repair</a></li>
-              <li><a class="block rounded px-3 py-2 hover:bg-slate-50" href="/services/aging-in-place-modifications/">Aging in Place Modifications</a></li>
-            </ul>
-          </div>
+// Modify header meta tags and title
+let newHeader = header
+  .replace(/<title>.*?<\/title>/, '<title>Wildfire Home Hardening in Simi Valley, CA | Checklist</title>')
+  .replace(/<meta name="description" content=".*?">/, '<meta name="description" content="Practical wildfire prep for Simi Valley homeowners — gutters, vents, decks, and defensible space, before Santa Ana wind season hits. Free checklist.">')
+  .replace(/<link rel="canonical" href=".*?">/, '<link rel="canonical" href="https://www.simivalleyhandymanco.com/blog/wildfire-home-hardening-simi-valley/">');
 
-          <a href="/#neighborhoods" class="font-medium text-white hover:text-brand transition-colors">Locations</a>
-
-          <a href="/pricing/" class="font-medium text-white hover:text-brand transition-colors">Pricing</a>
-          <a href="/blog/" class="font-medium text-white hover:text-brand transition-colors">Blog</a>
-          <a href="/faq/" class="font-medium text-white hover:text-brand transition-colors">FAQ</a>
-        </nav>
-      </div>
-
-      <nav id="mobile-menu" class="hidden border-t border-white/10 bg-ink px-4 py-3 md:hidden text-white" aria-label="Mobile navigation">
-        <ul class="space-y-3">
-          <li><a href="/" class="block font-medium text-brand">Home</a></li>
-          <li><a href="/services/" class="block hover:text-brand">All Services</a></li>
-          <li><a href="/#neighborhoods" class="block hover:text-brand">Locations</a></li>
-          <li><a href="/pricing/" class="block hover:text-brand">Pricing</a></li>
-          <li><a href="/blog/" class="block hover:text-brand">Blog</a></li>
-          <li><a href="/faq/" class="block hover:text-brand">FAQ</a></li>
-          <li><a href="/about/" class="block hover:text-brand">About</a></li>
-          <li><a href="/contact/" class="block hover:text-brand">Contact</a></li>
-          <li><a href="tel:8055550142" class="block text-brand font-bold"><i data-lucide="phone" class="h-4 w-4"></i> Call Now</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <main id="main-content">
-
+const blogContent = `
     <!-- Article Header -->
     <section class="bg-white px-4 pt-16 pb-12">
       <div class="mx-auto max-w-3xl">
@@ -260,96 +181,76 @@
     </section>
 
     <!-- Estimate / CTA Section -->
-    <section id="call-to-action" class="bg-slate-50 border-t border-slate-200">
-      <div class="mx-auto max-w-3xl px-4 py-16 text-center">
+    <section id="estimate-form" class="bg-slate-50 border-t border-slate-200">
+      <div class="mx-auto grid max-w-7xl gap-10 px-4 py-16 lg:grid-cols-2">
         <div>
           <h2 class="text-2xl font-bold text-ink md:text-4xl">Ready to Get It Fixed?</h2>
-          <p class="mt-4 text-lg text-slate-700">Gutters, fencing, or weatherstripping overdue for a check before wind season? Call or text us with what's going on — we'll give you a straight answer and a real price.</p>
-          <div class="mt-6 flex flex-wrap items-center justify-center gap-4">
+          <p class="mt-4 text-lg text-slate-700">Gutters, fencing, or weatherstripping overdue for a check before wind season? Send us a few details and we'll give you a straight estimate before you commit to anything.</p>
+          <div class="mt-6 flex flex-wrap gap-4">
             <a href="tel:8055550142" class="btn-primary">Call or Text (805) 555-0142</a>
           </div>
         </div>
 
-        
+        <form class="card-leander bg-white">
+          <h3 class="text-xl font-bold text-ink">Get a Free Estimate</h3>
+          <div class="mt-4 space-y-4">
+            <label class="block">Name<input type="text" name="name" class="mt-1 w-full rounded border border-slate-300 px-3 py-2" required></label>
+            <label class="block">Phone<input type="tel" name="phone" class="mt-1 w-full rounded border border-slate-300 px-3 py-2" required></label>
+            <label class="block">Email<input type="email" name="email" class="mt-1 w-full rounded border border-slate-300 px-3 py-2" required></label>
+            <label class="block">Service Needed
+              <select name="service" class="mt-1 w-full rounded border border-slate-300 px-3 py-2">
+                <option>Gutter Cleaning &amp; Repair</option>
+                <option>Fencing, Gates &amp; Pet Doors</option>
+                <option>General Repairs &amp; Punch List</option>
+                <option>Drywall Repair &amp; Painting</option>
+                <option>Plumbing Fixture Repairs</option>
+                <option>Electrical &amp; Smart Home Installs</option>
+                <option>Garage Doors, Decks &amp; General Repairs</option>
+              </select>
+            </label>
+            <label class="block">Neighborhood
+              <select name="neighborhood" class="mt-1 w-full rounded border border-slate-300 px-3 py-2">
+                <option>Wood Ranch</option>
+                <option>Central Simi Valley</option>
+                <option>East Simi Valley</option>
+                <option>Big Sky</option>
+                <option>Santa Susana</option>
+              </select>
+            </label>
+            <label class="block">Message<textarea name="message" rows="4" class="mt-1 w-full rounded border border-slate-300 px-3 py-2"></textarea></label>
+            <button type="submit" class="btn-primary w-full">Get a Free Estimate →</button>
+          </div>
+        </form>
       </div>
     </section>
+`;
 
-<footer class="bg-ink pb-24 text-slate-300 md:pb-8">
-    <div class="footer-cta-bar">
-      <div class="mx-auto flex max-w-3xl flex-wrap items-center justify-center gap-4">
-        <a href="tel:8055550142" class="btn-primary"><i data-lucide="phone" class="h-4 w-4"></i> Call Now</a>
-        <a href="tel:8055550142" class="btn-ghost border-white/40">Call or Text (805) 555-0142</a>
-      </div>
-      <p class="mx-auto mt-5 max-w-3xl text-sm text-slate-400">Also serving nearby: Moorpark, Thousand Oaks, and Chatsworth.</p>
-    </div>
-    <div class="mx-auto grid max-w-7xl gap-8 px-4 py-12 md:grid-cols-4">
-      <div>
-        <p class="text-lg font-extrabold uppercase tracking-wide text-brand">Simi Valley Handyman Co.</p>
-        <p class="mt-3 text-sm">Local same-day handyman help for Simi Valley homeowners who want straightforward repairs and clear pricing.</p>
-      </div>
-      <div>
-        <h2 class="text-sm font-bold uppercase tracking-wide text-brand">Contact</h2>
-        <ul class="mt-3 space-y-2 text-sm">
-          <li><a href="tel:8055550142" class="text-lg font-bold text-white hover:text-brand">(805) 555-0142</a></li>
-          <li><a href="mailto:info@simivalleyhandymanco.com" class="hover:text-brand">info@simivalleyhandymanco.com</a></li>
-          <li>123 Main St, Simi Valley, CA 93065</li>
-          <li>Hours: Mon–Sat, 8:00 AM – 6:00 PM</li>
-        </ul>
-      </div>
-      <div>
-        <h2 class="text-sm font-bold uppercase tracking-wide text-brand">Services</h2>
-        <ul class="mt-3 space-y-2 text-sm">
-          <li><a href="/services/general-repairs-punch-list/" class="hover:text-brand">General Repairs &amp; Punch List</a></li>
-          <li><a href="/services/drywall-repair/" class="hover:text-brand">Drywall Repair</a></li>
-          <li><a href="/services/painting-interior-exterior/" class="hover:text-brand">Painting &amp; Staining</a></li>
-          <li><a href="/services/plumbing-fixture-repair/" class="hover:text-brand">Plumbing Fixture Repair</a></li>
-          <li><a href="/services/electrical-fixture-install/" class="hover:text-brand">Electrical Fixture Install</a></li>
-          <li><a href="/services/smart-home-device-install/" class="hover:text-brand">Smart Home Device Install</a></li>
-          <li><a href="/services/tv-mounting-furniture-assembly/" class="hover:text-brand">TV Mounting &amp; Assembly</a></li>
-          <li><a href="/services/fencing-gates-pet-doors/" class="hover:text-brand">Fencing, Gates &amp; Pet Doors</a></li>
-          <li><a href="/services/garage-door-repair/" class="hover:text-brand">Garage Door Repair</a></li>
-          <li><a href="/services/deck-patio-repair/" class="hover:text-brand">Deck &amp; Patio Repair</a></li>
-          <li><a href="/services/gutter-cleaning-repair/" class="hover:text-brand">Gutter Cleaning &amp; Repair</a></li>
-        </ul>
-      </div>
-      <div>
-        <h2 class="text-sm font-bold uppercase tracking-wide text-brand">Areas We Serve</h2>
-        <ul class="mt-3 space-y-2 text-sm">
-          <li><a href="/#neighborhoods" class="hover:text-brand">Simi Valley</a></li>
-          <li><a href="/#neighborhoods" class="hover:text-brand">Wood Ranch</a></li>
-          <li><a href="/#neighborhoods" class="hover:text-brand">Central Simi Valley</a></li>
-          <li><a href="/#neighborhoods" class="hover:text-brand">East Simi Valley</a></li>
-          <li><a href="/#neighborhoods" class="hover:text-brand">Big Sky</a></li>
-          <li><a href="/#neighborhoods" class="hover:text-brand">Santa Susana</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="border-t border-white/10 px-4 py-4 text-center text-xs text-slate-500">
-      <div class="flex flex-wrap items-center justify-center gap-4 mb-2">
-        <a href="/privacy-policy/" class="hover:text-white transition-colors">Privacy Policy</a>
-        <a href="/terms-of-service/" class="hover:text-white transition-colors">Terms of Service</a>
-        <a href="/disclaimer/" class="hover:text-white transition-colors">Disclaimer</a>
-        <a href="/accessibility-statement/" class="hover:text-white transition-colors">Accessibility Statement</a>
-      </div>
-      © <script>document.write(new Date().getFullYear())</script> Simi Valley Handyman Co. All rights reserved.
-    </div>
-  </footer>
+let finalHTML = newHeader + '\n' + blogContent + '\n' + footer;
 
-  <div class="sticky-cta md:hidden">
-    <div class="min-w-0 flex-1">
-      <span class="sticky-cta__badge">Call Now</span>
-      <p class="mt-1 text-sm font-semibold text-white">Same-Day Response</p>
-      <p class="text-xs text-slate-400">Licensed-Scope &amp; Insured</p>
-    </div>
-    <a href="tel:8055550142" class="sticky-cta__phone shrink-0">📞 (805) 555-0142</a>
-  </div>
+// update schema
+finalHTML = finalHTML.replace(/<script type="application\/ld\+json">[\s\S]*?<\/script>/, `<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Wildfire Home Hardening in Simi Valley, CA",
+  "datePublished": "2026-07-11",
+  "dateModified": "2026-07-11",
+  "author": {
+    "@type": "Organization",
+    "name": "Simi Valley Handyman Co."
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Simi Valley Handyman Co.",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.simivalleyhandymanco.com/assets/image/handyman%20simi%20valley%20logo.webp"
+    }
+  }
+}
+</script>`);
 
-  <script type="module" src="/assets/js/main.js"></script>
-  <script>
-    lucide.createIcons();
-  </script>
-
-  <script type="application/ld+json">
+const faqSchemaStr = `<script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "FAQPage",
@@ -388,6 +289,10 @@
     }
   ]
 }
-</script>
-</body>
-</html>
+</script>`;
+
+finalHTML = finalHTML.replace(/<script type="application\/ld\+json">[\s\S]*?<\/script>[\s\n]*<\/body>/, faqSchemaStr + '\n</body>');
+
+
+fs.writeFileSync(destPath, finalHTML, 'utf8');
+console.log('Blog post generated successfully at', destPath);

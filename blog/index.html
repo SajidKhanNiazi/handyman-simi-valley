@@ -1,18 +1,273 @@
-﻿<!doctype html>
-<html lang='en'>
+<!doctype html>
+<html lang="en">
 <head>
-  <meta charset='UTF-8'>
-  <meta name='viewport' content='width=device-width, initial-scale=1.0'>  <title>Simi Valley Handyman Blog</title>
-  <meta name='description' content='Content for this Simi Valley handyman page is coming soon.'>
-  <link rel='canonical' href='https://www.simivalleyhandymanco.com/blog/'>
-  <script src='https://cdn.tailwindcss.com'></script>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simi Valley Handyman Blog | Home Maintenance Tips</title>
+  <meta name="description" content="Practical home maintenance tips, seasonal checklists, and advice specifically for Simi Valley, CA homeowners.">
+  <link rel="canonical" href="https://www.simivalleyhandymanco.com/blog/">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="/assets/css/site.css">
   <link rel="icon" type="image/webp" href="/assets/image/handyman simi valley logo.webp">
 </head>
-<body class='bg-slate-50 text-slate-900'>
-  <main class='mx-auto max-w-4xl px-4 py-20'>    <h1 class='text-3xl font-bold'>Simi Valley Handyman Blog</h1>
-    <p class='mt-4 text-slate-700'>Content coming soon.</p>
-    <p class='mt-6'><a class='text-blue-700 underline' href='/'>Return to homepage</a></p>
-  </main>
+<body class="bg-white text-slate-900">
+  <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:left-2 focus:top-2 focus:z-50 focus:rounded focus:bg-white focus:px-3 focus:py-2 focus:text-sm focus:shadow">Skip to main content</a>
+
+  <header class="z-40 shadow-xl bg-ink relative">
+    <div class="bg-slate-900 border-b border-white/10 text-slate-300">
+      <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-2 text-sm">
+        <div class="flex items-center gap-4">
+          <a href="tel:8055550142" class="font-medium hover:text-brand flex items-center gap-1"><i data-lucide="phone" class="h-4 w-4"></i> Call or Text: (805) 555-0142</a>
+          <span class="hidden text-slate-600 sm:inline">|</span>
+          <nav aria-label="Utility links" class="hidden sm:block">
+            <ul class="flex items-center gap-4">
+              <li><a href="/about/" class="hover:text-brand transition-colors">About</a></li>
+              <li><a href="/contact/" class="hover:text-brand transition-colors">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="flex items-center gap-4">
+          <a href="tel:8055550142" class="btn-primary hidden px-4 py-1.5 text-sm sm:inline-flex items-center gap-2"><i data-lucide="phone" class="h-4 w-4"></i> Call Now</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-ink">
+      <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-3">
+        <a href="/" class="inline-flex items-center gap-3">
+          <img
+            src="/assets/image/handyman simi valley logo.webp"
+            alt="Handyman Simi Valley logo"
+            title="Handyman Simi Valley"
+            class="h-16 md:h-20 w-[220px] md:w-[320px] object-contain scale-110 md:scale-125 origin-left"
+            loading="eager"
+            decoding="async"
+          >
+        </a>
+
+        <button id="menu-toggle" type="button" class="inline-flex rounded border border-white/20 text-white px-3 py-2 md:hidden hover:bg-white/10" aria-expanded="false" aria-controls="mobile-menu">
+          <span class="sr-only">Open menu</span>
+          <i data-lucide="menu" class="h-6 w-6"></i>
+        </button>
+
+        <nav class="hidden items-center gap-6 md:flex" aria-label="Main navigation">
+          <a href="/" class="font-medium text-brand">Home</a>
+
+          <div class="group relative">
+            <button type="button" class="inline-flex items-center gap-1 font-medium text-white hover:text-brand transition-colors">Services <span aria-hidden="true" class="text-xs">▾</span></button>
+            <ul class="nav-dropdown absolute left-0 top-full z-50 mt-2 w-80 rounded-xl border border-slate-200 bg-white p-2 shadow-lg text-slate-900">
+              <li><a class="block rounded px-3 py-2 hover:bg-slate-50" href="/services/">All Handyman Services</a></li>
+              <li><a class="block rounded px-3 py-2 hover:bg-slate-50" href="/services/general-repairs-punch-list/">General Repairs &amp; Punch List</a></li>
+              <li><a class="block rounded px-3 py-2 hover:bg-slate-50" href="/services/drywall-repair/">Drywall Repair</a></li>
+              <li><a class="block rounded px-3 py-2 hover:bg-slate-50" href="/services/painting-interior-exterior/">Painting Interior &amp; Exterior</a></li>
+              <li><a class="block rounded px-3 py-2 hover:bg-slate-50" href="/services/plumbing-fixture-repair/">Plumbing Fixture Repair</a></li>
+              <li><a class="block rounded px-3 py-2 hover:bg-slate-50" href="/services/electrical-fixture-install/">Electrical Fixture Install</a></li>
+              <li><a class="block rounded px-3 py-2 hover:bg-slate-50" href="/services/smart-home-device-install/">Smart Home Device Install</a></li>
+              <li><a class="block rounded px-3 py-2 hover:bg-slate-50" href="/services/tv-mounting-furniture-assembly/">TV Mounting &amp; Furniture Assembly</a></li>
+              <li><a class="block rounded px-3 py-2 hover:bg-slate-50" href="/services/fencing-gates-pet-doors/">Fencing, Gates &amp; Pet Doors</a></li>
+              <li><a class="block rounded px-3 py-2 hover:bg-slate-50" href="/services/garage-door-repair/">Garage Door Repair</a></li>
+              <li><a class="block rounded px-3 py-2 hover:bg-slate-50" href="/services/deck-patio-repair/">Deck &amp; Patio Repair</a></li>
+              <li><a class="block rounded px-3 py-2 hover:bg-slate-50" href="/services/gutter-cleaning-repair/">Gutter Cleaning &amp; Repair</a></li>
+              <li><a class="block rounded px-3 py-2 hover:bg-slate-50" href="/services/sprinkler-irrigation-repair/">Sprinkler &amp; Irrigation Repair</a></li>
+              <li><a class="block rounded px-3 py-2 hover:bg-slate-50" href="/services/aging-in-place-modifications/">Aging in Place Modifications</a></li>
+            </ul>
+          </div>
+
+          <a href="/#neighborhoods" class="font-medium text-white hover:text-brand transition-colors">Locations</a>
+
+          <a href="/pricing/" class="font-medium text-white hover:text-brand transition-colors">Pricing</a>
+          <a href="/blog/" class="font-medium text-white hover:text-brand transition-colors">Blog</a>
+          <a href="/faq/" class="font-medium text-white hover:text-brand transition-colors">FAQ</a>
+        </nav>
+      </div>
+
+      <nav id="mobile-menu" class="hidden border-t border-white/10 bg-ink px-4 py-3 md:hidden text-white" aria-label="Mobile navigation">
+        <ul class="space-y-3">
+          <li><a href="/" class="block font-medium text-brand">Home</a></li>
+          <li><a href="/services/" class="block hover:text-brand">All Services</a></li>
+          <li><a href="/#neighborhoods" class="block hover:text-brand">Locations</a></li>
+          <li><a href="/pricing/" class="block hover:text-brand">Pricing</a></li>
+          <li><a href="/blog/" class="block hover:text-brand">Blog</a></li>
+          <li><a href="/faq/" class="block hover:text-brand">FAQ</a></li>
+          <li><a href="/about/" class="block hover:text-brand">About</a></li>
+          <li><a href="/contact/" class="block hover:text-brand">Contact</a></li>
+          <li><a href="tel:8055550142" class="block text-brand font-bold"><i data-lucide="phone" class="h-4 w-4"></i> Call Now</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <section class="bg-slate-50 border-b border-slate-200/60 py-16">
+      <div class="mx-auto max-w-5xl px-4 text-center">
+        <h1 class="text-3xl font-extrabold leading-tight md:text-5xl text-ink">Simi Valley Home Maintenance Blog</h1>
+        <p class="mx-auto mt-4 max-w-2xl text-lg text-slate-700">Practical advice, seasonal checklists, and home repair guides specifically tailored for Simi Valley's climate and housing.</p>
+      </div>
+    </section>
+
+    <section class="mx-auto max-w-7xl px-4 py-16 bg-white">
+      <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+        
+        <!-- Pillar Post -->
+        <article class="card-leander bg-white flex flex-col group hover:border-brand overflow-hidden p-0">
+          <a href="/blog/simi-valley-seasonal-home-maintenance-checklist/" class="block aspect-video overflow-hidden">
+            <img src="/assets/image/seasonal-home-maintenance-hero.png" alt="Simi Valley Seasonal Home Maintenance" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
+          </a>
+          <div class="p-6 flex flex-col flex-grow">
+            <span class="text-xs font-bold uppercase tracking-wider text-brand mb-2">Pillar Guide</span>
+            <h2 class="text-xl font-bold text-ink mb-3 group-hover:text-brand transition-colors"><a href="/blog/simi-valley-seasonal-home-maintenance-checklist/">Simi Valley Seasonal Home Maintenance Checklist</a></h2>
+            <p class="text-sm text-slate-600 mb-6 flex-grow">A season-by-season home maintenance checklist built for Simi Valley's actual climate — wet season, dry season, wind season, and year-round basics.</p>
+            <a href="/blog/simi-valley-seasonal-home-maintenance-checklist/" class="inline-flex items-center gap-1 font-semibold text-ink group-hover:text-brand transition-colors mt-auto">Read guide <i data-lucide="arrow-right" class="h-4 w-4"></i></a>
+          </div>
+        </article>
+
+        <!-- Wildfire Hardening -->
+        <article class="card-leander bg-white flex flex-col group hover:border-brand overflow-hidden p-0">
+          <a href="/blog/wildfire-home-hardening-simi-valley/" class="block aspect-video overflow-hidden">
+            <img src="/assets/image/wildfire-home-hardening-hero.png" alt="Wildfire Home Hardening" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
+          </a>
+          <div class="p-6 flex flex-col flex-grow">
+            <span class="text-xs font-bold uppercase tracking-wider text-orange-600 mb-2">Safety</span>
+            <h2 class="text-xl font-bold text-ink mb-3 group-hover:text-brand transition-colors"><a href="/blog/wildfire-home-hardening-simi-valley/">Wildfire Home Hardening in Simi Valley, CA</a></h2>
+            <p class="text-sm text-slate-600 mb-6 flex-grow">Practical wildfire prep for Simi Valley homeowners — gutters, vents, decks, and defensible space, before Santa Ana wind season hits. Free checklist.</p>
+            <a href="/blog/wildfire-home-hardening-simi-valley/" class="inline-flex items-center gap-1 font-semibold text-ink group-hover:text-brand transition-colors mt-auto">Read guide <i data-lucide="arrow-right" class="h-4 w-4"></i></a>
+          </div>
+        </article>
+
+        <!-- Santa Ana Wind Prep -->
+        <article class="card-leander bg-white flex flex-col group hover:border-brand overflow-hidden p-0">
+          <a href="/blog/santa-ana-wind-home-prep-simi-valley/" class="block aspect-video overflow-hidden">
+            <img src="/assets/image/santa-ana-wind-home-prep-hero.png" alt="Santa Ana Wind Home Prep" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
+          </a>
+          <div class="p-6 flex flex-col flex-grow">
+            <span class="text-xs font-bold uppercase tracking-wider text-orange-600 mb-2">Safety</span>
+            <h2 class="text-xl font-bold text-ink mb-3 group-hover:text-brand transition-colors"><a href="/blog/santa-ana-wind-home-prep-simi-valley/">Santa Ana Wind Season Home Prep in Simi Valley, CA</a></h2>
+            <p class="text-sm text-slate-600 mb-6 flex-grow">Get your Simi Valley home ready for Santa Ana wind season — securing your property and preparing for possible SCE power shutoffs (PSPS).</p>
+            <a href="/blog/santa-ana-wind-home-prep-simi-valley/" class="inline-flex items-center gap-1 font-semibold text-ink group-hover:text-brand transition-colors mt-auto">Read guide <i data-lucide="arrow-right" class="h-4 w-4"></i></a>
+          </div>
+        </article>
+
+        <!-- Placeholder 2 -->
+        <article class="card-leander bg-slate-50 flex flex-col group hover:border-brand overflow-hidden p-0 border-dashed">
+          <div class="p-6 flex flex-col flex-grow justify-center items-center text-center opacity-70">
+            <div class="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-full bg-slate-200 text-slate-500"><i data-lucide="activity" class="h-6 w-6"></i></div>
+            <h2 class="text-lg font-bold text-ink mb-3">Earthquake Proofing Your Home</h2>
+            <p class="text-sm text-slate-600">Coming soon.</p>
+          </div>
+        </article>
+
+        <!-- Placeholder 3 -->
+        <article class="card-leander bg-slate-50 flex flex-col group hover:border-brand overflow-hidden p-0 border-dashed">
+          <div class="p-6 flex flex-col flex-grow justify-center items-center text-center opacity-70">
+            <div class="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-full bg-slate-200 text-slate-500"><i data-lucide="shield-alert" class="h-6 w-6"></i></div>
+            <h2 class="text-lg font-bold text-ink mb-3">Avoiding Unlicensed Contractor Scams</h2>
+            <p class="text-sm text-slate-600">Coming soon.</p>
+          </div>
+        </article>
+
+        <!-- Placeholder 4 -->
+        <article class="card-leander bg-slate-50 flex flex-col group hover:border-brand overflow-hidden p-0 border-dashed">
+          <div class="p-6 flex flex-col flex-grow justify-center items-center text-center opacity-70">
+            <div class="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-full bg-slate-200 text-slate-500"><i data-lucide="file-check-2" class="h-6 w-6"></i></div>
+            <h2 class="text-lg font-bold text-ink mb-3">California Handyman Licensing Explained</h2>
+            <p class="text-sm text-slate-600">Coming soon.</p>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+<footer class="bg-ink pb-24 text-slate-300 md:pb-8">
+    <div class="footer-cta-bar">
+      <div class="mx-auto flex max-w-3xl flex-wrap items-center justify-center gap-4">
+        <a href="tel:8055550142" class="btn-primary"><i data-lucide="phone" class="h-4 w-4"></i> Call Now</a>
+        <a href="tel:8055550142" class="btn-ghost border-white/40">Call or Text (805) 555-0142</a>
+      </div>
+      <p class="mx-auto mt-5 max-w-3xl text-sm text-slate-400">Also serving nearby: Moorpark, Thousand Oaks, and Chatsworth.</p>
+    </div>
+    <div class="mx-auto grid max-w-7xl gap-8 px-4 py-12 md:grid-cols-4">
+      <div>
+        <p class="text-lg font-extrabold uppercase tracking-wide text-brand">Simi Valley Handyman Co.</p>
+        <p class="mt-3 text-sm">Local same-day handyman help for Simi Valley homeowners who want straightforward repairs and clear pricing.</p>
+      </div>
+      <div>
+        <h2 class="text-sm font-bold uppercase tracking-wide text-brand">Contact</h2>
+        <ul class="mt-3 space-y-2 text-sm">
+          <li><a href="tel:8055550142" class="text-lg font-bold text-white hover:text-brand">(805) 555-0142</a></li>
+          <li><a href="mailto:info@simivalleyhandymanco.com" class="hover:text-brand">info@simivalleyhandymanco.com</a></li>
+          <li>123 Main St, Simi Valley, CA 93065</li>
+          <li>Hours: Mon–Sat, 8:00 AM – 6:00 PM</li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="text-sm font-bold uppercase tracking-wide text-brand">Services</h2>
+        <ul class="mt-3 space-y-2 text-sm">
+          <li><a href="/services/general-repairs-punch-list/" class="hover:text-brand">General Repairs &amp; Punch List</a></li>
+          <li><a href="/services/drywall-repair/" class="hover:text-brand">Drywall Repair</a></li>
+          <li><a href="/services/painting-interior-exterior/" class="hover:text-brand">Painting &amp; Staining</a></li>
+          <li><a href="/services/plumbing-fixture-repair/" class="hover:text-brand">Plumbing Fixture Repair</a></li>
+          <li><a href="/services/electrical-fixture-install/" class="hover:text-brand">Electrical Fixture Install</a></li>
+          <li><a href="/services/smart-home-device-install/" class="hover:text-brand">Smart Home Device Install</a></li>
+          <li><a href="/services/tv-mounting-furniture-assembly/" class="hover:text-brand">TV Mounting &amp; Assembly</a></li>
+          <li><a href="/services/fencing-gates-pet-doors/" class="hover:text-brand">Fencing, Gates &amp; Pet Doors</a></li>
+          <li><a href="/services/garage-door-repair/" class="hover:text-brand">Garage Door Repair</a></li>
+          <li><a href="/services/deck-patio-repair/" class="hover:text-brand">Deck &amp; Patio Repair</a></li>
+          <li><a href="/services/gutter-cleaning-repair/" class="hover:text-brand">Gutter Cleaning &amp; Repair</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="text-sm font-bold uppercase tracking-wide text-brand">Areas We Serve</h2>
+        <ul class="mt-3 space-y-2 text-sm">
+          <li><a href="/#neighborhoods" class="hover:text-brand">Simi Valley</a></li>
+          <li><a href="/#neighborhoods" class="hover:text-brand">Wood Ranch</a></li>
+          <li><a href="/#neighborhoods" class="hover:text-brand">Central Simi Valley</a></li>
+          <li><a href="/#neighborhoods" class="hover:text-brand">East Simi Valley</a></li>
+          <li><a href="/#neighborhoods" class="hover:text-brand">Big Sky</a></li>
+          <li><a href="/#neighborhoods" class="hover:text-brand">Santa Susana</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-white/10 px-4 py-4 text-center text-xs text-slate-500">
+      <div class="flex flex-wrap items-center justify-center gap-4 mb-2">
+        <a href="/privacy-policy/" class="hover:text-white transition-colors">Privacy Policy</a>
+        <a href="/terms-of-service/" class="hover:text-white transition-colors">Terms of Service</a>
+        <a href="/disclaimer/" class="hover:text-white transition-colors">Disclaimer</a>
+        <a href="/accessibility-statement/" class="hover:text-white transition-colors">Accessibility Statement</a>
+      </div>
+      © <script>document.write(new Date().getFullYear())</script> Simi Valley Handyman Co. All rights reserved.
+    </div>
+  </footer>
+
+  <div class="sticky-cta md:hidden">
+    <div class="min-w-0 flex-1">
+      <span class="sticky-cta__badge">Call Now</span>
+      <p class="mt-1 text-sm font-semibold text-white">Same-Day Response</p>
+      <p class="text-xs text-slate-400">Licensed-Scope &amp; Insured</p>
+    </div>
+    <a href="tel:8055550142" class="sticky-cta__phone shrink-0">📞 (805) 555-0142</a>
+  </div>
+
+  <script type="module" src="/assets/js/main.js"></script>
+  <script>
+    lucide.createIcons();
+  </script>
+
+  
+
+  
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Blog",
+  "name": "Simi Valley Handyman Blog",
+  "url": "https://www.simivalleyhandymanco.com/blog/",
+  "description": "Practical advice, seasonal checklists, and home repair guides specifically tailored for Simi Valley's climate and housing.",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Simi Valley Handyman Co."
+  }
+}
+</script>
 </body>
 </html>
